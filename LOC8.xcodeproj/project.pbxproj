@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26E89D831B4989EC006C1248 /* appswitcherbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E89D821B4989EC006C1248 /* appswitcherbackground.png */; };
 		26EF5EA61B48A68D005FB194 /* 12 copy 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E7D1B48A68C005FB194 /* 12 copy 2.png */; };
 		26EF5EA71B48A68D005FB194 /* 12 copy 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E7E1B48A68C005FB194 /* 12 copy 3.png */; };
 		26EF5EA81B48A68D005FB194 /* 12 copy 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E7F1B48A68C005FB194 /* 12 copy 4.png */; };
@@ -395,6 +396,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26E89D821B4989EC006C1248 /* appswitcherbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appswitcherbackground.png; sourceTree = "<group>"; };
 		26EF5E7D1B48A68C005FB194 /* 12 copy 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "12 copy 2.png"; path = "../Document/detail/design template/12 copy 2.png"; sourceTree = "<group>"; };
 		26EF5E7E1B48A68C005FB194 /* 12 copy 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "12 copy 3.png"; path = "../Document/detail/design template/12 copy 3.png"; sourceTree = "<group>"; };
 		26EF5E7F1B48A68C005FB194 /* 12 copy 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "12 copy 4.png"; path = "../Document/detail/design template/12 copy 4.png"; sourceTree = "<group>"; };
@@ -1476,6 +1478,7 @@
 		52B179F81B2FCB2600773A62 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				26E89D821B4989EC006C1248 /* appswitcherbackground.png */,
 				525CE8BB1B38923E00C990EF /* icon_calBlack.png */,
 				525CE8BC1B38923E00C990EF /* icon_calBlack@2x.png */,
 				525CE8BD1B38923E00C990EF /* icon_calBlue.png */,
@@ -1829,6 +1832,7 @@
 				5245C0EB1B2F64F800A36814 /* SourceSansPro-It.otf in Resources */,
 				52B17A211B2FCB2600773A62 /* btn_explore.png in Resources */,
 				529B036C1B2F7DF600EA4FF5 /* 4.png in Resources */,
+				26E89D831B4989EC006C1248 /* appswitcherbackground.png in Resources */,
 				5245C0CE1B2F64F800A36814 /* OpenSans-ExtraBold.ttf in Resources */,
 				525BA4EF1B32673600F80DC4 /* hour.png in Resources */,
 				5256BAE51B300A5A0003BEE8 /* btn_MapViewY@2x.png in Resources */,

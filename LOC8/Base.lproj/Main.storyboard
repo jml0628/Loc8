@@ -325,7 +325,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <state key="normal" backgroundImage="btn_loginShort.png"/>
                                         <connections>
-                                            <segue destination="Hd6-ob-m1d" kind="modal" id="gn8-GQ-3rp"/>
+                                            <segue destination="Hd6-ob-m1d" kind="push" id="ZI5-He-KpG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iBw-fC-BdP" userLabel="SIGN UP">
@@ -697,7 +697,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oU9-aN-nC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-39.5" y="1878.5"/>
+            <point key="canvasLocation" x="-481.5" y="1926.5"/>
         </scene>
         <!--View11 - App Side Switcher-->
         <scene sceneID="2KT-t1-o2p">
@@ -707,7 +707,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9mn-Yk-P4R">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appswitcherbackground.png" id="9mn-Yk-P4R">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -816,7 +816,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCW-df-QCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="546.5" y="2699.5"/>
+            <point key="canvasLocation" x="330.5" y="1926.5"/>
         </scene>
         <!--Navigation View2-->
         <scene sceneID="tjY-TY-dx3">
@@ -5832,25 +5832,6 @@ AFTER BOOKING</string>
             </objects>
             <point key="canvasLocation" x="-893.5" y="3485.5"/>
         </scene>
-        <!--App Switch Nav View Controller-->
-        <scene sceneID="WHE-T1-6W7">
-            <objects>
-                <navigationController storyboardIdentifier="AppSwitchNavController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="btC-xZ-G4K" customClass="AppSwitchNavViewController" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vq1-RO-oDQ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="0bV-wp-HOp" kind="relationship" relationship="rootViewController" id="0Wi-Cs-n3C"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gBi-L1-Bli" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="546.5" y="1885.5"/>
-        </scene>
         <!--Booking Nav View Controller-->
         <scene sceneID="50s-ed-5sS">
             <objects>
@@ -5975,6 +5956,7 @@ AFTER BOOKING</string>
     <resources>
         <image name="add.png" width="232" height="232"/>
         <image name="addLocation.png" width="714" height="70"/>
+        <image name="appswitcherbackground.png" width="750" height="1334"/>
         <image name="arrow_right.png" width="14" height="24"/>
         <image name="back.png" width="70" height="70"/>
         <image name="background.png" width="750" height="1334"/>

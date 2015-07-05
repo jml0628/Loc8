@@ -193,8 +193,7 @@ CGSize keyboardSize3;
     
     if(!signUpResult)
     {
-        
-        NSLog(@"Sigin UP SUCCESS2");
+        NSLog(@"Sigin UP SUCCESS");
         
         TabbarViewController *ctrl = [self.storyboard instantiateViewControllerWithIdentifier:@"TabbarController"];
         

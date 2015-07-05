@@ -10,10 +10,7 @@
 #import "SCLAlertView.h"
 #import "Config.h"
 #import "ActivityIndicator.h"
-//#import "AppSideSwitcherViewController.h"
-#import "TabbarViewController.h"
-
-
+#import "AppSwitchViewController.h"
 
 @interface LoginViewController ()
 
@@ -157,10 +154,8 @@
         
         NSLog(@"Login SUCCESS");
         
-        TabbarViewController *ctrl = [self.storyboard instantiateViewControllerWithIdentifier:@"TabbarController"];
-        
-        [self presentViewController:ctrl animated:YES completion:nil];
-        
+        AppSwitchViewController *appSwitchVC = (AppSwitchViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"AppSwitchController"];
+        [self.navigationController pushViewController:appSwitchVC animated:TRUE];
     } else {
         
         SCLAlertView *alert = [[SCLAlertView alloc] init];

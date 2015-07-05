@@ -26,16 +26,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
+/*    UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
     
     // add effect to an effect view
     UIVisualEffectView *effectView = [[UIVisualEffectView alloc]initWithEffect:blur];
     effectView.frame = self.view.frame;
     
     // add the effect view to the image view
-    [self.blurImage1 addSubview:effectView];
-    
-    
+    [self.blurImage1 addSubview:effectView];*/
 }
 
 - (void)didReceiveMemoryWarning {
