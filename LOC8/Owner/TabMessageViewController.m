@@ -44,7 +44,7 @@
 
 - (IBAction)PushingBlurView:(id)sender {
     
-    [self AddBlurView];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 // Going View22 - Settings

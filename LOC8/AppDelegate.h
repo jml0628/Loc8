@@ -12,7 +12,10 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate> 
 
 @property (strong, nonatomic) UIWindow *window;
-
-
+@property (strong,nonatomic) NSMutableDictionary *locationDict;
+@property (strong,nonatomic) NSString *updateString;
+@property (strong,nonatomic) NSString *updateId;
+@property (strong,nonatomic) NSString *userKey;
++(AppDelegate *)sharedDelegate;
 @end
 

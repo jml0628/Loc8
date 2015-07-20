@@ -63,37 +63,4 @@
     }
 }
 
-// Going My Booking Upcomming - View20
-- (IBAction)GoBooking:(id)sender {
-    
-    
-    
-    TabbarViewController *ctrl = [self.storyboard instantiateViewControllerWithIdentifier:@"TabbarController"];
-    
-    [ctrl.tabBar setBackgroundImage:[UIImage imageNamed:@"tabbarBackground.png"]];
-    UITabBar*           tabBar = ctrl.tabBar;
-    
-    UITabBarItem *tabBarItem0 = [tabBar.items objectAtIndex:0];
-    UITabBarItem *tabBarItem1 = [tabBar.items objectAtIndex:1];
-    UITabBarItem *tabBarItem2 = [tabBar.items objectAtIndex:2];
-    
-    [tabBarItem0 setSelectedImage:[[UIImage imageNamed:@"tabitem1Y"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-    [tabBarItem0 setImage:[[UIImage imageNamed:@"tabitem1B"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-    
-    [tabBarItem1 setSelectedImage:[[UIImage imageNamed:@"tabitem2Y"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-    [tabBarItem1 setImage:[[UIImage imageNamed:@"tabitem2B"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-    
-    [tabBarItem2 setSelectedImage:[[UIImage imageNamed:@"tabitem3Y"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-    [tabBarItem2 setImage:[[UIImage imageNamed:@"tabitem3B"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-    
-    [ctrl setSelectedIndex:0];
-    
-    [self presentViewController:ctrl animated:YES completion:nil];
-}
-
-//- (IBAction)onGotoLogin:(id)sender
-//{
-//    [self performSegueWithIdentifier:@"GoSignIn" sender:nil];
-//}
-
 @end

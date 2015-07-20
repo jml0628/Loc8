@@ -10,9 +10,7 @@
 
 @interface ADLDescViewController : UIViewController <UITextFieldDelegate> {
     
-    
 }
-
-@property (nonatomic, weak) IBOutlet UITextField *DescriptTxt;
+@property (nonatomic, strong) IBOutlet UITextField *DescriptTxt;
 
 @end

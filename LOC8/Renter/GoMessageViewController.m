@@ -48,7 +48,7 @@
 
 - (IBAction)PushingBlurView:(id)sender {
     
-    [self AddBlurView];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (UIImage*) convertImageToGrayScale:(UIImage*) image

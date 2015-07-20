@@ -8,47 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		26E89D831B4989EC006C1248 /* appswitcherbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E89D821B4989EC006C1248 /* appswitcherbackground.png */; };
-		26EF5EA61B48A68D005FB194 /* 12 copy 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E7D1B48A68C005FB194 /* 12 copy 2.png */; };
-		26EF5EA71B48A68D005FB194 /* 12 copy 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E7E1B48A68C005FB194 /* 12 copy 3.png */; };
-		26EF5EA81B48A68D005FB194 /* 12 copy 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E7F1B48A68C005FB194 /* 12 copy 4.png */; };
-		26EF5EA91B48A68D005FB194 /* 12 copy 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E801B48A68C005FB194 /* 12 copy 5.png */; };
-		26EF5EAA1B48A68D005FB194 /* 12 copy 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E811B48A68C005FB194 /* 12 copy 6.png */; };
-		26EF5EAB1B48A68D005FB194 /* 12 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E821B48A68C005FB194 /* 12 copy.png */; };
-		26EF5EAC1B48A68D005FB194 /* 12.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E831B48A68C005FB194 /* 12.png */; };
-		26EF5EAD1B48A68D005FB194 /* Account Settings Copy 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E841B48A68C005FB194 /* Account Settings Copy 2.png */; };
-		26EF5EAE1B48A68D005FB194 /* Account Settings Copy 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E851B48A68C005FB194 /* Account Settings Copy 3.png */; };
-		26EF5EAF1B48A68D005FB194 /* Account Settings Copy 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E861B48A68C005FB194 /* Account Settings Copy 4.png */; };
-		26EF5EB01B48A68D005FB194 /* Account Settings Copy 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E871B48A68C005FB194 /* Account Settings Copy 5.png */; };
-		26EF5EB11B48A68D005FB194 /* Account Settings Copy 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E881B48A68C005FB194 /* Account Settings Copy 6.png */; };
-		26EF5EB21B48A68D005FB194 /* Account Settings Copy 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E891B48A68C005FB194 /* Account Settings Copy 7.png */; };
-		26EF5EB31B48A68D005FB194 /* Account Settings Copy 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E8A1B48A68C005FB194 /* Account Settings Copy 8.png */; };
-		26EF5EB41B48A68D005FB194 /* Account Settings Copy 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E8B1B48A68C005FB194 /* Account Settings Copy 9.png */; };
-		26EF5EB51B48A68D005FB194 /* Account Settings Copy 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E8C1B48A68C005FB194 /* Account Settings Copy 10.png */; };
-		26EF5EB61B48A68D005FB194 /* Account Settings Copy 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E8D1B48A68C005FB194 /* Account Settings Copy 11.png */; };
-		26EF5EB71B48A68D005FB194 /* Account Settings Copy 12.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E8E1B48A68C005FB194 /* Account Settings Copy 12.png */; };
-		26EF5EB81B48A68D005FB194 /* Account Settings Copy 13.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E8F1B48A68C005FB194 /* Account Settings Copy 13.png */; };
-		26EF5EB91B48A68D005FB194 /* Account Settings Copy 14.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E901B48A68C005FB194 /* Account Settings Copy 14.png */; };
-		26EF5EBA1B48A68D005FB194 /* Account Settings Copy 15.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E911B48A68C005FB194 /* Account Settings Copy 15.png */; };
-		26EF5EBB1B48A68D005FB194 /* Account Settings Copy 16.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E921B48A68C005FB194 /* Account Settings Copy 16.png */; };
-		26EF5EBC1B48A68D005FB194 /* Account Settings Copy 17.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E931B48A68C005FB194 /* Account Settings Copy 17.png */; };
-		26EF5EBD1B48A68D005FB194 /* Account Settings Copy 18.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E941B48A68C005FB194 /* Account Settings Copy 18.png */; };
-		26EF5EBE1B48A68D005FB194 /* Account Settings Copy 19.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E951B48A68C005FB194 /* Account Settings Copy 19.png */; };
-		26EF5EBF1B48A68D005FB194 /* Account Settings Copy 20.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E961B48A68C005FB194 /* Account Settings Copy 20.png */; };
-		26EF5EC01B48A68D005FB194 /* Account Settings Copy 21.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E971B48A68C005FB194 /* Account Settings Copy 21.png */; };
-		26EF5EC11B48A68D005FB194 /* Account Settings Copy 22.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E981B48A68C005FB194 /* Account Settings Copy 22.png */; };
-		26EF5EC21B48A68D005FB194 /* Account Settings Copy 23.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E991B48A68C005FB194 /* Account Settings Copy 23.png */; };
-		26EF5EC31B48A68D005FB194 /* Account Settings Copy 24.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E9A1B48A68C005FB194 /* Account Settings Copy 24.png */; };
-		26EF5EC41B48A68D005FB194 /* Account Settings Copy 25.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E9B1B48A68C005FB194 /* Account Settings Copy 25.png */; };
-		26EF5EC51B48A68D005FB194 /* Account Settings Copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E9C1B48A68C005FB194 /* Account Settings Copy.png */; };
-		26EF5EC61B48A68D005FB194 /* Account Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E9D1B48A68C005FB194 /* Account Settings.png */; };
-		26EF5EC71B48A68D005FB194 /* Case Studies 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E9E1B48A68C005FB194 /* Case Studies 4.png */; };
-		26EF5EC81B48A68D005FB194 /* Launch - Option 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E9F1B48A68C005FB194 /* Launch - Option 4.png */; };
-		26EF5EC91B48A68D005FB194 /* Menu - Option 2 Copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5EA01B48A68C005FB194 /* Menu - Option 2 Copy.png */; };
-		26EF5ECA1B48A68D005FB194 /* Option 1 - Step 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5EA11B48A68C005FB194 /* Option 1 - Step 1.png */; };
-		26EF5ECB1B48A68D005FB194 /* Option 2 - Step 2 Copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5EA21B48A68D005FB194 /* Option 2 - Step 2 Copy.png */; };
-		26EF5ECC1B48A68D005FB194 /* Option 2 - Step 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5EA31B48A68D005FB194 /* Option 2 - Step 2.png */; };
-		26EF5ECD1B48A68D005FB194 /* Option 4 - Step 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5EA41B48A68D005FB194 /* Option 4 - Step 2.png */; };
-		26EF5ECE1B48A68D005FB194 /* Slice 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5EA51B48A68D005FB194 /* Slice 1.png */; };
+		26E89D891B49A665006C1248 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E89D871B49A665006C1248 /* Main.storyboard */; };
 		5203675A1B2CD128001C490A /* WeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520367591B2CD128001C490A /* WeightViewController.m */; };
 		5203675D1B2CD3AD001C490A /* GenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5203675C1B2CD3AD001C490A /* GenderViewController.m */; };
 		520367611B2CD6CB001C490A /* BookingNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520367601B2CD6CB001C490A /* BookingNavViewController.m */; };
@@ -112,7 +72,6 @@
 		5245C0F01B2F64F800A36814 /* SourceSansPro-SemiboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5245C0C11B2F64F800A36814 /* SourceSansPro-SemiboldIt.otf */; };
 		5249C57E1B2A200700D48217 /* RBFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5249C57D1B2A200700D48217 /* RBFilterViewController.m */; };
 		524D169D1B2879B900F02A81 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524D169C1B2879B900F02A81 /* LoginViewController.m */; };
-		524D16A61B2881A900F02A81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524D16A41B2881A900F02A81 /* Main.storyboard */; };
 		524D16B01B28AC3400F02A81 /* SCLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 524D16A91B28AC3400F02A81 /* SCLAlertView.m */; };
 		524D16B11B28AC3400F02A81 /* SCLAlertViewResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 524D16AB1B28AC3400F02A81 /* SCLAlertViewResponder.m */; };
 		524D16B21B28AC3400F02A81 /* SCLAlertViewStyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 524D16AD1B28AC3400F02A81 /* SCLAlertViewStyleKit.m */; };
@@ -393,51 +352,22 @@
 		52F017D21B3005D3008258E6 /* btn_gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52F017CF1B3005D3008258E6 /* btn_gear@2x.png */; };
 		52F017D31B3005D3008258E6 /* btn_retweet.png in Resources */ = {isa = PBXBuildFile; fileRef = 52F017D01B3005D3008258E6 /* btn_retweet.png */; };
 		52F017D41B3005D3008258E6 /* btn_retweet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52F017D11B3005D3008258E6 /* btn_retweet@2x.png */; };
+		8436317A1B57CE9800AE0ECD /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 843631651B57CE9800AE0ECD /* AFHTTPRequestOperation.m */; };
+		8436317B1B57CE9800AE0ECD /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 843631671B57CE9800AE0ECD /* AFHTTPRequestOperationManager.m */; };
+		8436317C1B57CE9800AE0ECD /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 843631691B57CE9800AE0ECD /* AFHTTPSessionManager.m */; };
+		8436317D1B57CE9800AE0ECD /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8436316C1B57CE9800AE0ECD /* AFNetworkReachabilityManager.m */; };
+		8436317E1B57CE9800AE0ECD /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8436316E1B57CE9800AE0ECD /* AFSecurityPolicy.m */; };
+		8436317F1B57CE9800AE0ECD /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 843631701B57CE9800AE0ECD /* AFURLConnectionOperation.m */; };
+		843631801B57CE9800AE0ECD /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 843631721B57CE9800AE0ECD /* AFURLRequestSerialization.m */; };
+		843631811B57CE9800AE0ECD /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 843631741B57CE9800AE0ECD /* AFURLResponseSerialization.m */; };
+		843631821B57CE9800AE0ECD /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 843631761B57CE9800AE0ECD /* AFURLSessionManager.m */; };
+		843631881B57D1F100AE0ECD /* PApiCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 843631871B57D1F100AE0ECD /* PApiCall.m */; };
+		8436318C1B57E3BC00AE0ECD /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8436318B1B57E3BC00AE0ECD /* AsyncImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26E89D821B4989EC006C1248 /* appswitcherbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appswitcherbackground.png; sourceTree = "<group>"; };
-		26EF5E7D1B48A68C005FB194 /* 12 copy 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "12 copy 2.png"; path = "../Document/detail/design template/12 copy 2.png"; sourceTree = "<group>"; };
-		26EF5E7E1B48A68C005FB194 /* 12 copy 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "12 copy 3.png"; path = "../Document/detail/design template/12 copy 3.png"; sourceTree = "<group>"; };
-		26EF5E7F1B48A68C005FB194 /* 12 copy 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "12 copy 4.png"; path = "../Document/detail/design template/12 copy 4.png"; sourceTree = "<group>"; };
-		26EF5E801B48A68C005FB194 /* 12 copy 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "12 copy 5.png"; path = "../Document/detail/design template/12 copy 5.png"; sourceTree = "<group>"; };
-		26EF5E811B48A68C005FB194 /* 12 copy 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "12 copy 6.png"; path = "../Document/detail/design template/12 copy 6.png"; sourceTree = "<group>"; };
-		26EF5E821B48A68C005FB194 /* 12 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "12 copy.png"; path = "../Document/detail/design template/12 copy.png"; sourceTree = "<group>"; };
-		26EF5E831B48A68C005FB194 /* 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 12.png; path = "../Document/detail/design template/12.png"; sourceTree = "<group>"; };
-		26EF5E841B48A68C005FB194 /* Account Settings Copy 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy 2.png"; path = "../Document/detail/design template/Account Settings Copy 2.png"; sourceTree = "<group>"; };
-		26EF5E851B48A68C005FB194 /* Account Settings Copy 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy 3.png"; path = "../Document/detail/design template/Account Settings Copy 3.png"; sourceTree = "<group>"; };
-		26EF5E861B48A68C005FB194 /* Account Settings Copy 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy 4.png"; path = "../Document/detail/design template/Account Settings Copy 4.png"; sourceTree = "<group>"; };
-		26EF5E871B48A68C005FB194 /* Account Settings Copy 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy 5.png"; path = "../Document/detail/design template/Account Settings Copy 5.png"; sourceTree = "<group>"; };
-		26EF5E881B48A68C005FB194 /* Account Settings Copy 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy 6.png"; path = "../Document/detail/design template/Account Settings Copy 6.png"; sourceTree = "<group>"; };
-		26EF5E891B48A68C005FB194 /* Account Settings Copy 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy 7.png"; path = "../Document/detail/design template/Account Settings Copy 7.png"; sourceTree = "<group>"; };
-		26EF5E8A1B48A68C005FB194 /* Account Settings Copy 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy 8.png"; path = "../Document/detail/design template/Account Settings Copy 8.png"; sourceTree = "<group>"; };
-		26EF5E8B1B48A68C005FB194 /* Account Settings Copy 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy 9.png"; path = "../Document/detail/design template/Account Settings Copy 9.png"; sourceTree = "<group>"; };
-		26EF5E8C1B48A68C005FB194 /* Account Settings Copy 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy 10.png"; path = "../Document/detail/design template/Account Settings Copy 10.png"; sourceTree = "<group>"; };
-		26EF5E8D1B48A68C005FB194 /* Account Settings Copy 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy 11.png"; path = "../Document/detail/design template/Account Settings Copy 11.png"; sourceTree = "<group>"; };
-		26EF5E8E1B48A68C005FB194 /* Account Settings Copy 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy 12.png"; path = "../Document/detail/design template/Account Settings Copy 12.png"; sourceTree = "<group>"; };
-		26EF5E8F1B48A68C005FB194 /* Account Settings Copy 13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy 13.png"; path = "../Document/detail/design template/Account Settings Copy 13.png"; sourceTree = "<group>"; };
-		26EF5E901B48A68C005FB194 /* Account Settings Copy 14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy 14.png"; path = "../Document/detail/design template/Account Settings Copy 14.png"; sourceTree = "<group>"; };
-		26EF5E911B48A68C005FB194 /* Account Settings Copy 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy 15.png"; path = "../Document/detail/design template/Account Settings Copy 15.png"; sourceTree = "<group>"; };
-		26EF5E921B48A68C005FB194 /* Account Settings Copy 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy 16.png"; path = "../Document/detail/design template/Account Settings Copy 16.png"; sourceTree = "<group>"; };
-		26EF5E931B48A68C005FB194 /* Account Settings Copy 17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy 17.png"; path = "../Document/detail/design template/Account Settings Copy 17.png"; sourceTree = "<group>"; };
-		26EF5E941B48A68C005FB194 /* Account Settings Copy 18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy 18.png"; path = "../Document/detail/design template/Account Settings Copy 18.png"; sourceTree = "<group>"; };
-		26EF5E951B48A68C005FB194 /* Account Settings Copy 19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy 19.png"; path = "../Document/detail/design template/Account Settings Copy 19.png"; sourceTree = "<group>"; };
-		26EF5E961B48A68C005FB194 /* Account Settings Copy 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy 20.png"; path = "../Document/detail/design template/Account Settings Copy 20.png"; sourceTree = "<group>"; };
-		26EF5E971B48A68C005FB194 /* Account Settings Copy 21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy 21.png"; path = "../Document/detail/design template/Account Settings Copy 21.png"; sourceTree = "<group>"; };
-		26EF5E981B48A68C005FB194 /* Account Settings Copy 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy 22.png"; path = "../Document/detail/design template/Account Settings Copy 22.png"; sourceTree = "<group>"; };
-		26EF5E991B48A68C005FB194 /* Account Settings Copy 23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy 23.png"; path = "../Document/detail/design template/Account Settings Copy 23.png"; sourceTree = "<group>"; };
-		26EF5E9A1B48A68C005FB194 /* Account Settings Copy 24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy 24.png"; path = "../Document/detail/design template/Account Settings Copy 24.png"; sourceTree = "<group>"; };
-		26EF5E9B1B48A68C005FB194 /* Account Settings Copy 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy 25.png"; path = "../Document/detail/design template/Account Settings Copy 25.png"; sourceTree = "<group>"; };
-		26EF5E9C1B48A68C005FB194 /* Account Settings Copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings Copy.png"; path = "../Document/detail/design template/Account Settings Copy.png"; sourceTree = "<group>"; };
-		26EF5E9D1B48A68C005FB194 /* Account Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Account Settings.png"; path = "../Document/detail/design template/Account Settings.png"; sourceTree = "<group>"; };
-		26EF5E9E1B48A68C005FB194 /* Case Studies 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Case Studies 4.png"; path = "../Document/detail/design template/Case Studies 4.png"; sourceTree = "<group>"; };
-		26EF5E9F1B48A68C005FB194 /* Launch - Option 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Launch - Option 4.png"; path = "../Document/detail/design template/Launch - Option 4.png"; sourceTree = "<group>"; };
-		26EF5EA01B48A68C005FB194 /* Menu - Option 2 Copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Menu - Option 2 Copy.png"; path = "../Document/detail/design template/Menu - Option 2 Copy.png"; sourceTree = "<group>"; };
-		26EF5EA11B48A68C005FB194 /* Option 1 - Step 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Option 1 - Step 1.png"; path = "../Document/detail/design template/Option 1 - Step 1.png"; sourceTree = "<group>"; };
-		26EF5EA21B48A68D005FB194 /* Option 2 - Step 2 Copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Option 2 - Step 2 Copy.png"; path = "../Document/detail/design template/Option 2 - Step 2 Copy.png"; sourceTree = "<group>"; };
-		26EF5EA31B48A68D005FB194 /* Option 2 - Step 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Option 2 - Step 2.png"; path = "../Document/detail/design template/Option 2 - Step 2.png"; sourceTree = "<group>"; };
-		26EF5EA41B48A68D005FB194 /* Option 4 - Step 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Option 4 - Step 2.png"; path = "../Document/detail/design template/Option 4 - Step 2.png"; sourceTree = "<group>"; };
-		26EF5EA51B48A68D005FB194 /* Slice 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Slice 1.png"; path = "../Document/detail/design template/Slice 1.png"; sourceTree = "<group>"; };
+		26E89D881B49A665006C1248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LOC8/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		520367581B2CD128001C490A /* WeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightViewController.h; sourceTree = "<group>"; };
 		520367591B2CD128001C490A /* WeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightViewController.m; sourceTree = "<group>"; };
 		5203675B1B2CD3AD001C490A /* GenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenderViewController.h; sourceTree = "<group>"; };
@@ -516,7 +446,6 @@
 		5249C57D1B2A200700D48217 /* RBFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBFilterViewController.m; sourceTree = "<group>"; };
 		524D169B1B2879B900F02A81 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Login/LoginViewController.h; sourceTree = "<group>"; };
 		524D169C1B2879B900F02A81 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Login/LoginViewController.m; sourceTree = "<group>"; };
-		524D16A51B2881A900F02A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		524D16A81B28AC3400F02A81 /* SCLAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLAlertView.h; sourceTree = "<group>"; };
 		524D16A91B28AC3400F02A81 /* SCLAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLAlertView.m; sourceTree = "<group>"; };
 		524D16AA1B28AC3400F02A81 /* SCLAlertViewResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLAlertViewResponder.h; sourceTree = "<group>"; };
@@ -859,6 +788,29 @@
 		52F017CF1B3005D3008258E6 /* btn_gear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_gear@2x.png"; sourceTree = "<group>"; };
 		52F017D01B3005D3008258E6 /* btn_retweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_retweet.png; sourceTree = "<group>"; };
 		52F017D11B3005D3008258E6 /* btn_retweet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_retweet@2x.png"; sourceTree = "<group>"; };
+		843631641B57CE9700AE0ECD /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		843631651B57CE9800AE0ECD /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		843631661B57CE9800AE0ECD /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		843631671B57CE9800AE0ECD /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		843631681B57CE9800AE0ECD /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		843631691B57CE9800AE0ECD /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		8436316A1B57CE9800AE0ECD /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		8436316B1B57CE9800AE0ECD /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		8436316C1B57CE9800AE0ECD /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		8436316D1B57CE9800AE0ECD /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		8436316E1B57CE9800AE0ECD /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		8436316F1B57CE9800AE0ECD /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		843631701B57CE9800AE0ECD /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		843631711B57CE9800AE0ECD /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		843631721B57CE9800AE0ECD /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		843631731B57CE9800AE0ECD /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		843631741B57CE9800AE0ECD /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		843631751B57CE9800AE0ECD /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		843631761B57CE9800AE0ECD /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		843631861B57D1F100AE0ECD /* PApiCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PApiCall.h; sourceTree = "<group>"; };
+		843631871B57D1F100AE0ECD /* PApiCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PApiCall.m; sourceTree = "<group>"; };
+		8436318A1B57E3BC00AE0ECD /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
+		8436318B1B57E3BC00AE0ECD /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -877,54 +829,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		26EF5E7C1B48A66D005FB194 /* tempimage */ = {
-			isa = PBXGroup;
-			children = (
-				26EF5E7D1B48A68C005FB194 /* 12 copy 2.png */,
-				26EF5E7E1B48A68C005FB194 /* 12 copy 3.png */,
-				26EF5E7F1B48A68C005FB194 /* 12 copy 4.png */,
-				26EF5E801B48A68C005FB194 /* 12 copy 5.png */,
-				26EF5E811B48A68C005FB194 /* 12 copy 6.png */,
-				26EF5E821B48A68C005FB194 /* 12 copy.png */,
-				26EF5E831B48A68C005FB194 /* 12.png */,
-				26EF5E841B48A68C005FB194 /* Account Settings Copy 2.png */,
-				26EF5E851B48A68C005FB194 /* Account Settings Copy 3.png */,
-				26EF5E861B48A68C005FB194 /* Account Settings Copy 4.png */,
-				26EF5E871B48A68C005FB194 /* Account Settings Copy 5.png */,
-				26EF5E881B48A68C005FB194 /* Account Settings Copy 6.png */,
-				26EF5E891B48A68C005FB194 /* Account Settings Copy 7.png */,
-				26EF5E8A1B48A68C005FB194 /* Account Settings Copy 8.png */,
-				26EF5E8B1B48A68C005FB194 /* Account Settings Copy 9.png */,
-				26EF5E8C1B48A68C005FB194 /* Account Settings Copy 10.png */,
-				26EF5E8D1B48A68C005FB194 /* Account Settings Copy 11.png */,
-				26EF5E8E1B48A68C005FB194 /* Account Settings Copy 12.png */,
-				26EF5E8F1B48A68C005FB194 /* Account Settings Copy 13.png */,
-				26EF5E901B48A68C005FB194 /* Account Settings Copy 14.png */,
-				26EF5E911B48A68C005FB194 /* Account Settings Copy 15.png */,
-				26EF5E921B48A68C005FB194 /* Account Settings Copy 16.png */,
-				26EF5E931B48A68C005FB194 /* Account Settings Copy 17.png */,
-				26EF5E941B48A68C005FB194 /* Account Settings Copy 18.png */,
-				26EF5E951B48A68C005FB194 /* Account Settings Copy 19.png */,
-				26EF5E961B48A68C005FB194 /* Account Settings Copy 20.png */,
-				26EF5E971B48A68C005FB194 /* Account Settings Copy 21.png */,
-				26EF5E981B48A68C005FB194 /* Account Settings Copy 22.png */,
-				26EF5E991B48A68C005FB194 /* Account Settings Copy 23.png */,
-				26EF5E9A1B48A68C005FB194 /* Account Settings Copy 24.png */,
-				26EF5E9B1B48A68C005FB194 /* Account Settings Copy 25.png */,
-				26EF5E9C1B48A68C005FB194 /* Account Settings Copy.png */,
-				26EF5E9D1B48A68C005FB194 /* Account Settings.png */,
-				26EF5E9E1B48A68C005FB194 /* Case Studies 4.png */,
-				26EF5E9F1B48A68C005FB194 /* Launch - Option 4.png */,
-				26EF5EA01B48A68C005FB194 /* Menu - Option 2 Copy.png */,
-				26EF5EA11B48A68C005FB194 /* Option 1 - Step 1.png */,
-				26EF5EA21B48A68D005FB194 /* Option 2 - Step 2 Copy.png */,
-				26EF5EA31B48A68D005FB194 /* Option 2 - Step 2.png */,
-				26EF5EA41B48A68D005FB194 /* Option 4 - Step 2.png */,
-				26EF5EA51B48A68D005FB194 /* Slice 1.png */,
-			);
-			name = tempimage;
-			sourceTree = "<group>";
-		};
 		5203675E1B2CD68E001C490A /* BookList */ = {
 			isa = PBXGroup;
 			children = (
@@ -947,7 +851,6 @@
 		522B59711B281E6000872E69 = {
 			isa = PBXGroup;
 			children = (
-				26EF5E7C1B48A66D005FB194 /* tempimage */,
 				525BA5231B327A5600F80DC4 /* Library */,
 				529B02971B2F70C900EA4FF5 /* Resource */,
 				522B597C1B281E6000872E69 /* LOC8 */,
@@ -981,8 +884,8 @@
 				524D16911B28711200F02A81 /* Login */,
 				522B59811B281E6000872E69 /* AppDelegate.h */,
 				522B59821B281E6000872E69 /* AppDelegate.m */,
-				524D16A41B2881A900F02A81 /* Main.storyboard */,
 				522B598A1B281E6000872E69 /* Images.xcassets */,
+				26E89D871B49A665006C1248 /* Main.storyboard */,
 				522B598C1B281E6000872E69 /* LaunchScreen.xib */,
 				522B597D1B281E6000872E69 /* Supporting Files */,
 			);
@@ -992,6 +895,8 @@
 		522B597D1B281E6000872E69 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				843631891B57E3BC00AE0ECD /* AsyncImageView */,
+				843631621B57CE9700AE0ECD /* AfNetworking */,
 				522B597E1B281E6000872E69 /* Info.plist */,
 				522B597F1B281E6000872E69 /* main.m */,
 			);
@@ -1606,6 +1511,59 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		843631621B57CE9700AE0ECD /* AfNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				843631851B57D1F100AE0ECD /* ApiCall */,
+				843631631B57CE9700AE0ECD /* AFNetworking */,
+			);
+			path = AfNetworking;
+			sourceTree = "<group>";
+		};
+		843631631B57CE9700AE0ECD /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				843631641B57CE9700AE0ECD /* AFHTTPRequestOperation.h */,
+				843631651B57CE9800AE0ECD /* AFHTTPRequestOperation.m */,
+				843631661B57CE9800AE0ECD /* AFHTTPRequestOperationManager.h */,
+				843631671B57CE9800AE0ECD /* AFHTTPRequestOperationManager.m */,
+				843631681B57CE9800AE0ECD /* AFHTTPSessionManager.h */,
+				843631691B57CE9800AE0ECD /* AFHTTPSessionManager.m */,
+				8436316A1B57CE9800AE0ECD /* AFNetworking.h */,
+				8436316B1B57CE9800AE0ECD /* AFNetworkReachabilityManager.h */,
+				8436316C1B57CE9800AE0ECD /* AFNetworkReachabilityManager.m */,
+				8436316D1B57CE9800AE0ECD /* AFSecurityPolicy.h */,
+				8436316E1B57CE9800AE0ECD /* AFSecurityPolicy.m */,
+				8436316F1B57CE9800AE0ECD /* AFURLConnectionOperation.h */,
+				843631701B57CE9800AE0ECD /* AFURLConnectionOperation.m */,
+				843631711B57CE9800AE0ECD /* AFURLRequestSerialization.h */,
+				843631721B57CE9800AE0ECD /* AFURLRequestSerialization.m */,
+				843631731B57CE9800AE0ECD /* AFURLResponseSerialization.h */,
+				843631741B57CE9800AE0ECD /* AFURLResponseSerialization.m */,
+				843631751B57CE9800AE0ECD /* AFURLSessionManager.h */,
+				843631761B57CE9800AE0ECD /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		843631851B57D1F100AE0ECD /* ApiCall */ = {
+			isa = PBXGroup;
+			children = (
+				843631861B57D1F100AE0ECD /* PApiCall.h */,
+				843631871B57D1F100AE0ECD /* PApiCall.m */,
+			);
+			path = ApiCall;
+			sourceTree = "<group>";
+		};
+		843631891B57E3BC00AE0ECD /* AsyncImageView */ = {
+			isa = PBXGroup;
+			children = (
+				8436318A1B57E3BC00AE0ECD /* AsyncImageView.h */,
+				8436318B1B57E3BC00AE0ECD /* AsyncImageView.m */,
+			);
+			path = AsyncImageView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1637,7 +1595,7 @@
 				TargetAttributes = {
 					522B59791B281E6000872E69 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = BYA5FS5Y4P;
+						DevelopmentTeam = 89L79W5YZ6;
 					};
 				};
 			};
@@ -1667,7 +1625,6 @@
 				529B03811B2F7DF600EA4FF5 /* 25.png in Resources */,
 				5245C0E61B2F64F800A36814 /* SourceSansPro-BlackIt.otf in Resources */,
 				52F017D41B3005D3008258E6 /* btn_retweet@2x.png in Resources */,
-				26EF5EB91B48A68D005FB194 /* Account Settings Copy 14.png in Resources */,
 				525975D61B30695400F8E0DF /* arrow_right@2x.png in Resources */,
 				5245C0CF1B2F64F800A36814 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				52341A371B33328F00576BAA /* btn_close2@2x.png in Resources */,
@@ -1677,23 +1634,19 @@
 				52A0F3E21B30CE4F006E2822 /* tabitem2Y@2x.png in Resources */,
 				529B038B1B2F7DF600EA4FF5 /* 35.png in Resources */,
 				525BA53E1B3293FA00F80DC4 /* room001.png in Resources */,
-				26EF5EB11B48A68D005FB194 /* Account Settings Copy 6.png in Resources */,
 				5245C0F01B2F64F800A36814 /* SourceSansPro-SemiboldIt.otf in Resources */,
 				5245C0E11B2F64F800A36814 /* VisbyCF-MediumOblique.otf in Resources */,
 				52B17A351B2FCB2600773A62 /* loc8_title.png in Resources */,
 				525975F71B308D3F00F8E0DF /* star5.png in Resources */,
 				529B036A1B2F7DF600EA4FF5 /* 2.png in Resources */,
 				5256BAEE1B300C860003BEE8 /* photo1.png in Resources */,
-				26EF5EBC1B48A68D005FB194 /* Account Settings Copy 17.png in Resources */,
 				5245C0C71B2F64F800A36814 /* Montserrat-SemiBold.otf in Resources */,
 				525975E71B30773400F8E0DF /* lb_GotPlace1.png in Resources */,
 				5256BB381B3059D60003BEE8 /* btn_MilesY@2x.png in Resources */,
 				525975FA1B308D3F00F8E0DF /* star6@2x.png in Resources */,
 				525975F81B308D3F00F8E0DF /* star5@2x.png in Resources */,
-				26EF5EB41B48A68D005FB194 /* Account Settings Copy 9.png in Resources */,
 				525BA53F1B3293FA00F80DC4 /* room002.png in Resources */,
 				5245C0D61B2F64F800A36814 /* VisbyCF-Bold.otf in Resources */,
-				26EF5EC41B48A68D005FB194 /* Account Settings Copy 25.png in Resources */,
 				5256BADF1B300A5A0003BEE8 /* btn_ListViewB@2x.png in Resources */,
 				52B17A1C1B2FCB2600773A62 /* base2.png in Resources */,
 				529B02EC1B2F70C900EA4FF5 /* 180.png in Resources */,
@@ -1705,17 +1658,13 @@
 				52A0F3DA1B30CE4F006E2822 /* tabbarBackground@2x.png in Resources */,
 				529B036E1B2F7DF600EA4FF5 /* 6.png in Resources */,
 				52B17A281B2FCB2600773A62 /* btn_signinL@2x.png in Resources */,
-				26EF5EB01B48A68D005FB194 /* Account Settings Copy 5.png in Resources */,
-				26EF5EAA1B48A68D005FB194 /* 12 copy 6.png in Resources */,
 				529B03771B2F7DF600EA4FF5 /* 15.png in Resources */,
 				525CE8C71B38923E00C990EF /* icon_calGreen.png in Resources */,
 				52B17A2E1B2FCB2600773A62 /* line_logoW@2x.png in Resources */,
 				5245C0C41B2F64F800A36814 /* Montserrat-ExtraBold.otf in Resources */,
 				529B03711B2F7DF600EA4FF5 /* 9.png in Resources */,
 				52A0F3E41B30CE4F006E2822 /* tabitem3B@2x.png in Resources */,
-				26EF5EB61B48A68D005FB194 /* Account Settings Copy 11.png in Resources */,
 				52A0F3DE1B30CE4F006E2822 /* tabitem1Y@2x.png in Resources */,
-				26EF5EB21B48A68D005FB194 /* Account Settings Copy 7.png in Resources */,
 				52A0F3D91B30CE4F006E2822 /* tabbarBackground.png in Resources */,
 				5256BB361B3059D60003BEE8 /* btn_MilesB@2x.png in Resources */,
 				5256BB1C1B3023DF0003BEE8 /* back@2x.png in Resources */,
@@ -1723,7 +1672,6 @@
 				525AFEB71B2F591900428052 /* ProximaNovaCond-Regular.otf in Resources */,
 				525BA4F01B32673600F80DC4 /* hour@2x.png in Resources */,
 				525AFEB01B2F591900428052 /* ProximaNova-RegItalic.otf in Resources */,
-				26EF5EBE1B48A68D005FB194 /* Account Settings Copy 19.png in Resources */,
 				5256BB2C1B30296B0003BEE8 /* msgProOwn@2x.png in Resources */,
 				5256BADA1B300A5A0003BEE8 /* btn_FavoritesY.png in Resources */,
 				529B038A1B2F7DF600EA4FF5 /* 34.png in Resources */,
@@ -1732,13 +1680,12 @@
 				525975E81B30773400F8E0DF /* lb_GotPlace1@2x.png in Resources */,
 				5256BAF01B300C860003BEE8 /* tbl_cellRoom1.png in Resources */,
 				529B03821B2F7DF600EA4FF5 /* 26.png in Resources */,
-				26EF5ECC1B48A68D005FB194 /* Option 2 - Step 2.png in Resources */,
-				26EF5EB51B48A68D005FB194 /* Account Settings Copy 10.png in Resources */,
 				5256BAE01B300A5A0003BEE8 /* btn_ListViewY.png in Resources */,
 				529B03721B2F7DF600EA4FF5 /* 10.png in Resources */,
 				5245C0CA1B2F64F800A36814 /* MyriadPro-Light.otf in Resources */,
 				525975F21B30812100F8E0DF /* add@2x.png in Resources */,
 				52B17A331B2FCB2600773A62 /* loc8_Mark.png in Resources */,
+				26E89D891B49A665006C1248 /* Main.storyboard in Resources */,
 				529B02FA1B2F70C900EA4FF5 /* logobackground.png@3x.png in Resources */,
 				52EBFF621B38021B0092D9AA /* btn_cellCheck2Y.png in Resources */,
 				5256BB301B302B780003BEE8 /* iconTime@2x.png in Resources */,
@@ -1751,32 +1698,26 @@
 				52A0F3E61B30CE4F006E2822 /* tabitem3Y@2x.png in Resources */,
 				5256BADD1B300A5A0003BEE8 /* btn_FilterB@2x.png in Resources */,
 				5256BAD81B300A5A0003BEE8 /* btn_FavoritesB.png in Resources */,
-				26EF5EAC1B48A68D005FB194 /* 12.png in Resources */,
 				525AFEBA1B2F591900428052 /* ProximaNovaCond-SemiboldIt.otf in Resources */,
 				525AFEAD1B2F591900428052 /* ProximaNova-Extrabold.otf in Resources */,
-				524D16A61B2881A900F02A81 /* Main.storyboard in Resources */,
 				52B17A531B2FFB3800773A62 /* btn_signupL.png in Resources */,
 				5245C0D51B2F64F800A36814 /* OpenSans-SemiboldItalic.ttf in Resources */,
 				525975FD1B30952000F8E0DF /* btn_cellCheck2B.png in Resources */,
-				26EF5EC61B48A68D005FB194 /* Account Settings.png in Resources */,
 				525AFEB51B2F591900428052 /* ProximaNovaCond-Light.otf in Resources */,
 				529B036F1B2F7DF600EA4FF5 /* 7.png in Resources */,
 				5245C0CB1B2F64F800A36814 /* Apache License.txt in Resources */,
 				5245C0EF1B2F64F800A36814 /* SourceSansPro-Semibold.otf in Resources */,
 				529B03741B2F7DF600EA4FF5 /* 12.png in Resources */,
-				26EF5EB31B48A68D005FB194 /* Account Settings Copy 8.png in Resources */,
 				529B02ED1B2F70C900EA4FF5 /* 58.png in Resources */,
 				52B17A2D1B2FCB2600773A62 /* line_logoW.png in Resources */,
 				5256BADB1B300A5A0003BEE8 /* btn_FavoritesY@2x.png in Resources */,
 				52A0F3E71B30CE4F006E2822 /* tabitem4B.png in Resources */,
 				5245C0DA1B2F64F800A36814 /* VisbyCF-ExtraBold.otf in Resources */,
 				52A0F3E11B30CE4F006E2822 /* tabitem2Y.png in Resources */,
-				26EF5EAE1B48A68D005FB194 /* Account Settings Copy 3.png in Resources */,
 				525AFEB31B2F591900428052 /* ProximaNova-Semibold.otf in Resources */,
 				529B03891B2F7DF600EA4FF5 /* 33.png in Resources */,
 				525976021B309BAF00F8E0DF /* addLocation@2x.png in Resources */,
 				525AFEB81B2F591900428052 /* ProximaNovaCond-RegularIt.otf in Resources */,
-				26EF5EC51B48A68D005FB194 /* Account Settings Copy.png in Resources */,
 				525976051B30A30600F8E0DF /* btn_RemoveB.png in Resources */,
 				529B036B1B2F7DF600EA4FF5 /* 3.png in Resources */,
 				52B17A1D1B2FCB2600773A62 /* base2@2x.png in Resources */,
@@ -1785,16 +1726,11 @@
 				52A0F3E91B30CE4F006E2822 /* tabitem4Y.png in Resources */,
 				529B02E91B2F70C900EA4FF5 /* 1000.png in Resources */,
 				529B03871B2F7DF600EA4FF5 /* 31.png in Resources */,
-				26EF5EC21B48A68D005FB194 /* Account Settings Copy 23.png in Resources */,
-				26EF5EA61B48A68D005FB194 /* 12 copy 2.png in Resources */,
 				529B03801B2F7DF600EA4FF5 /* 24.png in Resources */,
 				52F017D31B3005D3008258E6 /* btn_retweet.png in Resources */,
 				52A0F3EA1B30CE4F006E2822 /* tabitemY@2x.png in Resources */,
-				26EF5EBD1B48A68D005FB194 /* Account Settings Copy 18.png in Resources */,
 				52B17A2F1B2FCB2600773A62 /* loading-icon.png in Resources */,
 				52B17A261B2FCB2600773A62 /* btn_loginShort@2x.png in Resources */,
-				26EF5EB71B48A68D005FB194 /* Account Settings Copy 12.png in Resources */,
-				26EF5EA71B48A68D005FB194 /* 12 copy 3.png in Resources */,
 				529B02EE1B2F70C900EA4FF5 /* 80.png in Resources */,
 				529B03901B2F7DF600EA4FF5 /* 40.png in Resources */,
 				5256BB251B3027230003BEE8 /* btn_UpcomingB.png in Resources */,
@@ -1827,8 +1763,6 @@
 				525975FE1B30952000F8E0DF /* btn_cellCheck2B@2x.png in Resources */,
 				525CE8C41B38923E00C990EF /* icon_calBlack@2x.png in Resources */,
 				52B17A381B2FCB2600773A62 /* loc8_title@2x.png in Resources */,
-				26EF5EAF1B48A68D005FB194 /* Account Settings Copy 4.png in Resources */,
-				26EF5EC01B48A68D005FB194 /* Account Settings Copy 21.png in Resources */,
 				5245C0EB1B2F64F800A36814 /* SourceSansPro-It.otf in Resources */,
 				52B17A211B2FCB2600773A62 /* btn_explore.png in Resources */,
 				529B036C1B2F7DF600EA4FF5 /* 4.png in Resources */,
@@ -1842,11 +1776,8 @@
 				5245C0DD1B2F64F800A36814 /* VisbyCF-HeavyOblique.otf in Resources */,
 				52B17A581B3001E800773A62 /* btn_gear.png in Resources */,
 				52B17A541B2FFB3800773A62 /* btn_signupL@2x.png in Resources */,
-				26EF5EAD1B48A68D005FB194 /* Account Settings Copy 2.png in Resources */,
 				52B17A231B2FCB2600773A62 /* btn_ForgotPassword.png in Resources */,
-				26EF5ECE1B48A68D005FB194 /* Slice 1.png in Resources */,
 				52A0F3DC1B30CE4F006E2822 /* tabitem1B@2x.png in Resources */,
-				26EF5EC81B48A68D005FB194 /* Launch - Option 4.png in Resources */,
 				525975E91B30773400F8E0DF /* lb_GotPlace2.png in Resources */,
 				529B02EA1B2F70C900EA4FF5 /* 120.png in Resources */,
 				5245C0DF1B2F64F800A36814 /* VisbyCF-LightOblique.otf in Resources */,
@@ -1854,15 +1785,12 @@
 				5256BADE1B300A5A0003BEE8 /* btn_ListViewB.png in Resources */,
 				52A0F3E31B30CE4F006E2822 /* tabitem3B.png in Resources */,
 				52B17A291B2FCB2600773A62 /* btn_signupShort.png in Resources */,
-				26EF5ECD1B48A68D005FB194 /* Option 4 - Step 2.png in Resources */,
 				5256BB371B3059D60003BEE8 /* btn_MilesY.png in Resources */,
-				26EF5ECA1B48A68D005FB194 /* Option 1 - Step 1.png in Resources */,
 				525976011B309BAF00F8E0DF /* addLocation.png in Resources */,
 				5245C0C61B2F64F800A36814 /* Montserrat-Regular.otf in Resources */,
 				529B038F1B2F7DF600EA4FF5 /* 39.png in Resources */,
 				52B17A2B1B2FCB2600773A62 /* line_logoH.png in Resources */,
 				525AFEB21B2F591900428052 /* ProximaNova-RegularItalic.otf in Resources */,
-				26EF5EAB1B48A68D005FB194 /* 12 copy.png in Resources */,
 				5245C0D01B2F64F800A36814 /* OpenSans-Italic.ttf in Resources */,
 				5245C0EC1B2F64F800A36814 /* SourceSansPro-Light.otf in Resources */,
 				525975EA1B30773400F8E0DF /* lb_GotPlace2@2x.png in Resources */,
@@ -1880,14 +1808,12 @@
 				52341A361B33328F00576BAA /* btn_close2.png in Resources */,
 				52B17A241B2FCB2600773A62 /* btn_ForgotPassword@2x.png in Resources */,
 				5245C0D41B2F64F800A36814 /* OpenSans-Semibold.ttf in Resources */,
-				26EF5EC31B48A68D005FB194 /* Account Settings Copy 24.png in Resources */,
 				529B037A1B2F7DF600EA4FF5 /* 18.png in Resources */,
 				525CE8CA1B38923E00C990EF /* icon_calOutline@2x.png in Resources */,
 				525AFEAF1B2F591900428052 /* ProximaNova-LightItalic.otf in Resources */,
 				5245C0ED1B2F64F800A36814 /* SourceSansPro-LightIt.otf in Resources */,
 				525975EC1B30773400F8E0DF /* lb_NeedPlace1@2x.png in Resources */,
 				5245C0E71B2F64F800A36814 /* SourceSansPro-Bold.otf in Resources */,
-				26EF5EC71B48A68D005FB194 /* Case Studies 4.png in Resources */,
 				529B02F41B2F70C900EA4FF5 /* Default-568h@2x.png in Resources */,
 				5256BAE91B300BE30003BEE8 /* btn_FavHost@2x.png in Resources */,
 				5245C0D91B2F64F800A36814 /* VisbyCF-DemiBoldOblique.otf in Resources */,
@@ -1907,20 +1833,16 @@
 				525BA5441B32ABBA00F80DC4 /* photo2@2x.png in Resources */,
 				5256BAEF1B300C860003BEE8 /* photo1@2x.png in Resources */,
 				5245C0EA1B2F64F800A36814 /* SourceSansPro-ExtraLightIt.otf in Resources */,
-				26EF5EA91B48A68D005FB194 /* 12 copy 5.png in Resources */,
 				525BA5421B32AB2A00F80DC4 /* photo2.png in Resources */,
 				5245C0D11B2F64F800A36814 /* OpenSans-Light.ttf in Resources */,
-				26EF5EA81B48A68D005FB194 /* 12 copy 4.png in Resources */,
 				5245C0E31B2F64F800A36814 /* VisbyCF-ThinOblique.otf in Resources */,
 				529B03911B2F7DF600EA4FF5 /* 41.png in Resources */,
 				529B037B1B2F7DF600EA4FF5 /* 19.png in Resources */,
 				525BA5401B3293FA00F80DC4 /* room003.png in Resources */,
 				52B17A4A1B2FF01E00773A62 /* btn_submitL@2x.png in Resources */,
-				26EF5ECB1B48A68D005FB194 /* Option 2 - Step 2 Copy.png in Resources */,
 				529B03761B2F7DF600EA4FF5 /* 14.png in Resources */,
 				5256BB271B3027230003BEE8 /* btn_UpcomingY.png in Resources */,
 				52B17A201B2FCB2600773A62 /* btn_close@2x.png in Resources */,
-				26EF5EB81B48A68D005FB194 /* Account Settings Copy 13.png in Resources */,
 				5245C0E21B2F64F800A36814 /* VisbyCF-Thin.otf in Resources */,
 				52B17A2C1B2FCB2600773A62 /* line_logoH@2x.png in Resources */,
 				52B17A251B2FCB2600773A62 /* btn_loginShort.png in Resources */,
@@ -1932,9 +1854,7 @@
 				525AFEB91B2F591900428052 /* ProximaNovaCond-Semibold.otf in Resources */,
 				52B17A321B2FCB2600773A62 /* LOADING…@2x.png in Resources */,
 				525AFEB11B2F591900428052 /* ProximaNova-Regular.otf in Resources */,
-				26EF5EC11B48A68D005FB194 /* Account Settings Copy 22.png in Resources */,
 				5256BB351B3059D60003BEE8 /* btn_MilesB.png in Resources */,
-				26EF5EC91B48A68D005FB194 /* Menu - Option 2 Copy.png in Resources */,
 				529B03701B2F7DF600EA4FF5 /* 8.png in Resources */,
 				5245C0DC1B2F64F800A36814 /* VisbyCF-Heavy.otf in Resources */,
 				5256BB281B3027230003BEE8 /* btn_UpcomingY@2x.png in Resources */,
@@ -1950,13 +1870,10 @@
 				5256BB261B3027230003BEE8 /* btn_UpcomingB@2x.png in Resources */,
 				52B17A551B2FFB3800773A62 /* lb_WelcomeTitle.png in Resources */,
 				52B17A1B1B2FCB2600773A62 /* base.png in Resources */,
-				26EF5EBB1B48A68D005FB194 /* Account Settings Copy 16.png in Resources */,
 				52A0F3C01B30AE78006E2822 /* btn_bookRoom.png in Resources */,
 				525975DD1B306DC400F8E0DF /* btn_cellCheckY.png in Resources */,
 				52B17A341B2FCB2600773A62 /* loc8_Mark@2x.png in Resources */,
-				26EF5EBA1B48A68D005FB194 /* Account Settings Copy 15.png in Resources */,
 				525AFEB61B2F591900428052 /* ProximaNovaCond-LightIt.otf in Resources */,
-				26EF5EBF1B48A68D005FB194 /* Account Settings Copy 20.png in Resources */,
 				52A0F3E81B30CE4F006E2822 /* tabitem4B@2x.png in Resources */,
 				525975D51B30695400F8E0DF /* arrow_right.png in Resources */,
 				5245C0D31B2F64F800A36814 /* OpenSans-Regular.ttf in Resources */,
@@ -1995,7 +1912,10 @@
 				52558CD81B29DB41001EB070 /* RBListViewController.m in Sources */,
 				5203675A1B2CD128001C490A /* WeightViewController.m in Sources */,
 				529776051B2D10D300B899AA /* FavriteHostViewController.m in Sources */,
+				8436317C1B57CE9800AE0ECD /* AFHTTPSessionManager.m in Sources */,
 				526D79251B315C7E000B511E /* ShareCommon.m in Sources */,
+				843631811B57CE9800AE0ECD /* AFURLResponseSerialization.m in Sources */,
+				8436317A1B57CE9800AE0ECD /* AFHTTPRequestOperation.m in Sources */,
 				52C0777B1B2E5EC20023EC4B /* ADLAmenityViewController.m in Sources */,
 				524D16B21B28AC3400F02A81 /* SCLAlertViewStyleKit.m in Sources */,
 				526E1CBC1B297FFB009DE2CC /* TabbarViewController.m in Sources */,
@@ -2023,15 +1943,19 @@
 				522BD14C1B2CB20300807534 /* HostSignUpViewController.m in Sources */,
 				524D16B31B28AC3400F02A81 /* SCLButton.m in Sources */,
 				525198E21B2ED92B00546023 /* UIImage+ImageEffects.m in Sources */,
+				8436317E1B57CE9800AE0ECD /* AFSecurityPolicy.m in Sources */,
 				522B59831B281E6000872E69 /* AppDelegate.m in Sources */,
+				843631821B57CE9800AE0ECD /* AFURLSessionManager.m in Sources */,
 				525CE94D1B39532400C990EF /* JTCalendarMenuMonthView.m in Sources */,
 				525DF52D1B2E437C00E08CB9 /* NavOwnerAddLocViewController.m in Sources */,
+				8436318C1B57E3BC00AE0ECD /* AsyncImageView.m in Sources */,
 				525CE8CD1B38BE2A00C990EF /* SelectTimeCollectionViewCell.m in Sources */,
 				52D1D5E41B2CDD3B00635BF6 /* LocationViewController.m in Sources */,
 				522B59801B281E6000872E69 /* main.m in Sources */,
 				525DF5301B2E4AC500E08CB9 /* LocationManageViewController.m in Sources */,
 				522BD1491B2CB1C100807534 /* HostSignNavViewController.m in Sources */,
 				529DBBBC1B2CBAD200398099 /* SettingHostProViewController.m in Sources */,
+				8436317F1B57CE9800AE0ECD /* AFURLConnectionOperation.m in Sources */,
 				525CE94C1B39532400C990EF /* JTCalendarDayView.m in Sources */,
 				524D16BE1B28BEA700F02A81 /* ActivityIndicator.m in Sources */,
 				525CE94B1B39532400C990EF /* JTCalendarContentView.m in Sources */,
@@ -2043,6 +1967,8 @@
 				52D1D5F41B2CEC4600635BF6 /* BookRoomPaymentViewController.m in Sources */,
 				5265E4741B2B351C00F78DBF /* RBMyBookingTableViewCell.m in Sources */,
 				524F0B221B31DAF9000D6E33 /* HostProNavViewController.m in Sources */,
+				8436317D1B57CE9800AE0ECD /* AFNetworkReachabilityManager.m in Sources */,
+				843631801B57CE9800AE0ECD /* AFURLRequestSerialization.m in Sources */,
 				52558CD31B29D663001EB070 /* MyBookingsViewController.m in Sources */,
 				5265E4791B2B3E2200F78DBF /* MessageViewController.m in Sources */,
 				5265E45F1B2AC5E100F78DBF /* FAmenitiesViewController.m in Sources */,
@@ -2050,9 +1976,11 @@
 				52C077A91B2E7E360023EC4B /* PListItem.m in Sources */,
 				529776521B2D1AEB00B899AA /* PaymentTableViewCell.m in Sources */,
 				524D16B11B28AC3400F02A81 /* SCLAlertViewResponder.m in Sources */,
+				8436317B1B57CE9800AE0ECD /* AFHTTPRequestOperationManager.m in Sources */,
 				525CE94F1B39532400C990EF /* JTCalendarMonthView.m in Sources */,
 				52C077781B2E5E960023EC4B /* ADLLocationTypeViewController.m in Sources */,
 				520367611B2CD6CB001C490A /* BookingNavViewController.m in Sources */,
+				843631881B57D1F100AE0ECD /* PApiCall.m in Sources */,
 				52C0778A1B2E66EC0023EC4B /* ADLAttViewController.m in Sources */,
 				527D121D1B29FB190038F6F3 /* RBListTableViewCell.m in Sources */,
 			);
@@ -2061,20 +1989,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		26E89D871B49A665006C1248 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26E89D881B49A665006C1248 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		522B598C1B281E6000872E69 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				522B598D1B281E6000872E69 /* Base */,
 			);
 			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		524D16A41B2881A900F02A81 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				524D16A51B2881A900F02A81 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -2097,8 +2026,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Damon Holzum (AB37P8492C)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Damon Holzum (AB37P8492C)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yonggui Jin (5JHUWQ9259)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yonggui Jin (5JHUWQ9259)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -2120,7 +2049,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "5baa6707-72f1-4c4a-baf3-4de42d54f671";
+				PROVISIONING_PROFILE = "c6e3e4cb-d432-472b-88c0-ef16cf04aa9d";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -2142,8 +2071,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Damon Holzum (AB37P8492C)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Damon Holzum (AB37P8492C)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yonggui Jin (5JHUWQ9259)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yonggui Jin (5JHUWQ9259)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -2158,7 +2087,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "5baa6707-72f1-4c4a-baf3-4de42d54f671";
+				PROVISIONING_PROFILE = "c6e3e4cb-d432-472b-88c0-ef16cf04aa9d";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -2169,13 +2098,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Damon Holzum (AB37P8492C)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yonggui Jin (5JHUWQ9259)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yonggui Jin (5JHUWQ9259)";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = LOC8/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5baa6707-72f1-4c4a-baf3-4de42d54f671";
+				PROVISIONING_PROFILE = "c6e3e4cb-d432-472b-88c0-ef16cf04aa9d";
 			};
 			name = Debug;
 		};
@@ -2184,13 +2115,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Damon Holzum (AB37P8492C)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yonggui Jin (5JHUWQ9259)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yonggui Jin (5JHUWQ9259)";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = LOC8/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5baa6707-72f1-4c4a-baf3-4de42d54f671";
+				PROVISIONING_PROFILE = "c6e3e4cb-d432-472b-88c0-ef16cf04aa9d";
 			};
 			name = Release;
 		};

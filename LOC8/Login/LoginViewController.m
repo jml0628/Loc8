@@ -11,9 +11,11 @@
 #import "Config.h"
 #import "ActivityIndicator.h"
 #import "AppSwitchViewController.h"
-
+#import "AppDelegate.h"
 @interface LoginViewController ()
-
+{
+    AppDelegate *appDelegate;
+}
 @end
 
 
@@ -25,7 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    appDelegate = [AppDelegate sharedDelegate];
     
     // add tap gesture to help in dismissing keyboard
     UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc]
@@ -51,7 +53,13 @@
     
     UsernameTxt.autocorrectionType = UITextAutocorrectionTypeNo;
     
+    NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
     
+    NSString* strUserName = [userDefaults stringForKey:SIGNIN_USERNAME_TAG];
+    NSString* strUserPwd  = [userDefaults stringForKey:SIGNIN_USERPWD_TAG];
+    
+    [self.UsernameTxt setText:strUserName];
+    [self.PasswordTxt setText:strUserPwd];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -62,8 +70,7 @@
 
 // Going Welcome - View2
 - (IBAction)GoBack:(id)sender {
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 
@@ -130,6 +137,8 @@
     SCLAlertView *alert = [[SCLAlertView alloc] init];
 
     [alert showError:self title:Alert subTitle:ERFailInternet closeButtonTitle:OkButtonTitle duration:0.0f];
+    
+    PersonLoginFlag = 0;
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
@@ -154,9 +163,24 @@
         
         NSLog(@"Login SUCCESS");
         
+        PersonLoginFlag = 1;
+        
+        
+        NSString *strUsername = self.UsernameTxt.text;
+        NSString *strPassword = self.PasswordTxt.text;
+        
+        appDelegate.userKey = [jsonData valueForKey:@"apiKey"];
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        [userDefaults setObject:strUsername forKey:SIGNIN_USERNAME_TAG];
+        [userDefaults setObject:strPassword forKey:SIGNIN_USERPWD_TAG];
+        
+        [userDefaults synchronize];
+        
         AppSwitchViewController *appSwitchVC = (AppSwitchViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"AppSwitchController"];
         [self.navigationController pushViewController:appSwitchVC animated:TRUE];
     } else {
+        
+        PersonLoginFlag = 0;
         
         SCLAlertView *alert = [[SCLAlertView alloc] init];
         
@@ -289,6 +313,9 @@
     [super viewWillAppear:animated];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardDidShowNotification object:nil];
+    
+    PersonLoginFlag = 0;
+
 }
 
 

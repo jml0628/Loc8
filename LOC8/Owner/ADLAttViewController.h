@@ -12,6 +12,8 @@
     
     NSArray *AmenitiesData;
     int        GenderType;
+    NSString *attendence;
+    IBOutlet UITableView *myTableView;
 }
 
 

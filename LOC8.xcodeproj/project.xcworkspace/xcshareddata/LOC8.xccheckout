@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>CC5D62A0-38EE-4151-A623-4B765402F5E6</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>LOC8</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>E156A93DEA2BFEE21FE7958FB27AFD1AF8061E31</key>
 		<string>https://github.com/jml0628/Loc8.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>LOC8.xcodeproj/project.xcworkspace</string>
+	<string>LOC8.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E156A93DEA2BFEE21FE7958FB27AFD1AF8061E31</key>

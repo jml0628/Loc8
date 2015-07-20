@@ -19,6 +19,8 @@
 #import "AppSwitchViewController.h"
 #import "MessageViewController.h"
 #import "NavOwnerAddLocViewController.h"
+#import "AppDelegate.h"
+#import "PApiCall.h"
 
 #define REFRESH_HEADER_HEIGHT 100.0f
 
@@ -28,7 +30,9 @@
 #define CONNECTION_STATE_NEXTLOAD   1003
 
 @interface TabLocationViewController ()
-
+{
+    AppDelegate *appDelegate;
+}
 @end
 
 @implementation TabLocationViewController
@@ -37,31 +41,54 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    appDelegate = [AppDelegate sharedDelegate];
+    
+    dataArray = [[NSMutableArray alloc]init];
     // Do any additional setup after loading the view.
+    listTxt1 = [[NSArray alloc]init]; // [NSArray arrayWithObjects:@"Modern Private Loft Studio1", @"Modern Private Loft Studio2", nil];
+    listTxt2 = [[NSArray alloc]init]; //[NSArray arrayWithObjects:@"May 25th, 8PM-10PM", @"Jun 25th, 7PM-8PM", nil];
+    listTxt3 = [[NSArray alloc]init]; // [NSArray arrayWithObjects:@"123 Street #910", @"321 Street #060", nil];
+    listTxt4 = [[NSArray alloc]init]; //[NSArray arrayWithObjects:@"SF, CA 94108", @"SF, CA 56894", nil];
     
-    listTxt1 = [NSArray arrayWithObjects:@"Modern Private Loft Studio1", @"Modern Private Loft Studio2", nil];
+    listImg1 = [[NSArray alloc]init]; //[NSArray arrayWithObjects:@"room1", @"room1", nil];
     
-    listTxt2 = [NSArray arrayWithObjects:@"May 25th, 8PM-10PM", @"Jun 25th, 7PM-8PM", nil];
-    
-    listTxt3 = [NSArray arrayWithObjects:@"123 Street #910", @"321 Street #060", nil];
-    listTxt4 = [NSArray arrayWithObjects:@"SF, CA 94108", @"SF, CA 56894", nil];
-    
-    listImg1 = [NSArray arrayWithObjects:@"room1", @"room1", nil];
-    
-    listArray = [[NSMutableArray alloc] init];
+    listArray = [[NSMutableArray alloc]init]; //[[NSMutableArray alloc] init];
     
     [self searchListWithFiterItem:1];
     
     listCount = 3;
+   
 }
 
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:YES];
+     [self getData];
+}
+
+- (void) getData
+{
+    NSString *userId= appDelegate.userKey;
+    [dataArray removeAllObjects];
+    [[ActivityIndicator currentIndicator] show];
+    
+    [[PApiCall sharedInstance]m_GetApiResponse:Host_Url parameters:[NSString stringWithFormat:@"mode=GetLocation&user_id=%@",userId] onCompletion:^(NSDictionary *json) {
+        NSLog(@"%@",json);
+        [[ActivityIndicator currentIndicator] hide];
+        if([[json valueForKey:@"value"] isKindOfClass:[NSArray class]])
+        {
+       [ dataArray addObjectsFromArray:[json valueForKey:@"value"]];
+        }
+        [tbl_listView reloadData];
+    }];
+}
 - (IBAction)PushingBlurView:(id)sender {
     
-    [self AddBlurView];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)PushAddLocation:(id)sender {
-    
+    appDelegate.updateString = @"Add";
     NavOwnerAddLocViewController *view = [self.storyboard instantiateViewControllerWithIdentifier:@"NavOwnerAddLocController"];
     
     [self presentViewController:view animated:YES completion:nil];
@@ -100,7 +127,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return listCount;
+    return dataArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -112,13 +139,11 @@
     if (cell == nil) {
         cell = [[RBMyBookingTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"MyLocationCell"];
     }
-    
-    int pubLevelx = (int) indexPath.row % 2;
-    
-        cell.ItemList1.text     = [listTxt1 objectAtIndex:pubLevelx];
-        cell.ItemList2.text     = [listTxt2 objectAtIndex:pubLevelx];
-        cell.ItemList3.text     = [listTxt3 objectAtIndex:pubLevelx];
-        cell.ItemList4.text     = [listTxt4 objectAtIndex:pubLevelx];
+        cell.ItemList1.text     = [NSString stringWithFormat:@"%@",[[dataArray objectAtIndex:indexPath.row]valueForKey:@"location_name"]];
+    NSString *dateString = [NSString stringWithFormat:@"%@ %@ - %@",[[dataArray objectAtIndex:indexPath.row]valueForKey:@"start_date"],[[dataArray objectAtIndex:indexPath.row]valueForKey:@"start_time"],[[dataArray objectAtIndex:indexPath.row]valueForKey:@"end_time"]];
+        cell.ItemList2.text     = dateString;
+        cell.ItemList3.text     = [[dataArray objectAtIndex:indexPath.row]valueForKey:@"address"];
+        cell.ItemList4.text     = [NSString stringWithFormat:@"%@ ,%@",[[dataArray objectAtIndex:indexPath.row]valueForKey:@"ATP"],[[dataArray objectAtIndex:indexPath.row]valueForKey:@"city"]];
         
         //    cell.ItemFavHostBtn.tag = item.ItemList_ID;
         
@@ -127,16 +152,21 @@
             cell.ItemBtn1.hidden = NO;
         } else
             cell.ItemBtn1.hidden = YES;
+    
+    NSString *URL = [[dataArray objectAtIndex:indexPath.row]valueForKey:@"image_data"];
+   if (URL == nil || [URL isKindOfClass:[NSNull class]]) {
+       
+    } else {
+        [cell.ItemImg1 setImageURL:[NSURL URLWithString:@""]];
+        [cell.ItemImg1 setImageURL:[NSURL URLWithString:URL]];
+    }
+    cell.ItemImg2.hidden    =   YES;
         
-        [cell.ItemImg1 setImage:[UIImage imageNamed: @"tbl_cellRoom1.png"]];
-        
-        
-        cell.ItemImg2.hidden    =   YES;
-        
-        [cell.ItemBtn2 addTarget:self action:@selector(GoremoveLocation:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.ItemBtn2 addTarget:self action:@selector(GoremoveLocation:) forControlEvents:UIControlEventTouchUpInside];
     [cell.ItemBtn1 addTarget:self action:@selector(GoEditList:) forControlEvents:UIControlEventTouchUpInside];
     
-    
+    cell.ItemBtn1.tag = indexPath.row;
+    cell.ItemBtn2.tag = indexPath.row;
     return cell;
 }
 
@@ -145,28 +175,43 @@
     SCLAlertView *alert = [[SCLAlertView alloc] init];
     
     [alert addButton:@"Done" actionBlock:^(void) {
-        NSLog(@"Second button tapped");
         
-        listCount = listCount - 1;
         
-        [self.tbl_listView reloadData];
-        
-//        [alert showNotice:self title:kNoticeTitle subTitle:@"You've just displayed this awesome Pop Up View with 5 seconds duration" closeButtonTitle:nil duration:0.2f];
+        NSString *locationId = [[dataArray objectAtIndex:sender.tag]valueForKey:@"location_id"];
+        [[ActivityIndicator currentIndicator] show];
+        [[PApiCall sharedInstance]m_GetApiResponse:Host_Url parameters:[NSString stringWithFormat:@"mode=DeleteLocation&location_id=%@",locationId] onCompletion:^(NSDictionary *json) {
+            NSLog(@"%@",json);
+            [[ActivityIndicator currentIndicator] hide];
+            if([[json valueForKey:@"value"] isKindOfClass:[NSArray class]])
+            {
+                [ dataArray addObjectsFromArray:[json valueForKey:@"value"]];
+            }
+            [tbl_listView reloadData];
+        }];
+        [self getData];
     }];
     
     [alert showSuccess:self title:@"Remove listing" subTitle:@"Are you sure you want to remove this listing?" closeButtonTitle:@"Close" duration:0.0f];
-
-    
-    
-    
     return;
 }
 
 - (void)GoEditList:(UIButton*)sender {
-    
+
+    appDelegate.updateId = [[dataArray objectAtIndex:sender.tag]valueForKey:@"location_id"];
+    appDelegate.updateString = @"update";
     NavOwnerAddLocViewController *view = [self.storyboard instantiateViewControllerWithIdentifier:@"NavOwnerAddLocController"];
-    
     [self presentViewController:view animated:YES completion:nil];
+
+//    SCLAlertView *alert = [[SCLAlertView alloc] init];
+//    
+//    [alert addButton:@"Done" actionBlock:^(void) {
+//        appDelegate.updateId = [[dataArray objectAtIndex:sender.tag]valueForKey:@"location_id"];
+//        appDelegate.updateString = @"update";
+//        NavOwnerAddLocViewController *view = [self.storyboard instantiateViewControllerWithIdentifier:@"NavOwnerAddLocController"];
+//        [self presentViewController:view animated:YES completion:nil];
+//    }];
+//    
+//    [alert showSuccess:self title:@"Remove listing" subTitle:@"Are you sure you want to edit this listing?" closeButtonTitle:@"Close" duration:0.0f];
 }
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

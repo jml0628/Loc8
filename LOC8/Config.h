@@ -57,6 +57,11 @@ extern CGSize keyboardSize;
 #define SIGNIN_API              @"http://www.eden7garden.com/task_manager/v1/login"
 #define SIGNUP_API              @"http://www.eden7garden.com/task_manager/v1/register"
 
+
+#define Host_Url                     @"http://demo.inextsolutions.com/Locb/index.php?"
+#define K_Result            @"success"
+
+
 #define SIGNIN_USERNAME_TAG     @"name"
 #define SIGNIN_USERPWD_TAG      @"password"
 #define SIGNIN_USEREMAIL_TAG    @"email"

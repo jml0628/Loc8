@@ -7,20 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SCLAlertView.h"
+#import "AFNetworking.h"
 @interface LocationManageViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UINavigationControllerDelegate, UITextFieldDelegate, UIImagePickerControllerDelegate, UIActionSheetDelegate, UICollectionViewDataSource, UICollectionViewDelegate> {
     
     NSArray *DetailsData;
     NSMutableArray *roomImages;
     
     int     textfeildOriginY;
-    int     listCount;
-    
     IBOutlet UIScrollView*      myRegScroller;
     
     UIImagePickerController* imagePicker;
+    
+    //---------------------------------------
+    UIImage *locationImage;
+    SCLAlertView *alert;
+    
+    NSMutableArray *dataArray;
 }
-
+@property (strong,nonatomic) NSString *string;
 @property (nonatomic, weak) IBOutlet UITextField *LocationNameTx;
 @property (nonatomic, weak) IBOutlet UITextField *NeighTx;
 @property (nonatomic, weak) IBOutlet UITextField *PriceTx;
@@ -34,4 +39,6 @@
 @property (retain, nonatomic) IBOutlet UIView           *rooms_views;
 @property (retain, nonatomic) IBOutlet UIView           *main_views;
 
+
+- (IBAction)addLocationAction:(id)sender;
 @end

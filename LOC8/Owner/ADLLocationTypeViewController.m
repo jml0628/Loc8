@@ -7,9 +7,12 @@
 //
 
 #import "ADLLocationTypeViewController.h"
+#import "AppDelegate.h"
 
 @interface ADLLocationTypeViewController ()
-
+{
+    AppDelegate *appDelegate;
+}
 @end
 
 @implementation ADLLocationTypeViewController
@@ -17,13 +20,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    appDelegate = [AppDelegate sharedDelegate];
     
     LocationArrData = [NSArray arrayWithObjects:@"House", @"Apartment or Condo", @"Office", @"Outdoor", @"Garage", @"Commercial", @"Warehouse", @"Club", @"Private patio", @"Other (fill in)", @"OTHER", nil];
     
+    NSString *location_typeString = [appDelegate.locationDict valueForKey:@"location_type"];
+    NSLog(@"location type string : %@", location_typeString);
+
     LocationCheckArr = [[NSMutableArray alloc] init];
     
     for (int i=0; i < [LocationArrData count]; i++) {
-        [LocationCheckArr addObject:[NSNumber numberWithBool:NO]];
+        
+        NSString* locationArrItem = (NSString*)[LocationArrData objectAtIndex:i];
+        
+        if([appDelegate.updateString isEqualToString:@"update"]){
+            
+            if ([location_typeString isEqualToString:locationArrItem]){
+                [LocationCheckArr addObject:[NSNumber numberWithBool:YES]];
+            }else{
+                [LocationCheckArr addObject:[NSNumber numberWithBool:NO]];
+            }
+        }else{
+            [LocationCheckArr addObject:[NSNumber numberWithBool:NO]];
+        }
     }
 }
 
@@ -40,6 +59,17 @@
 
 - (IBAction)GoSave:(id)sender {
     
+    NSString *locationType =@"";
+    for(int i = 0; i < LocationCheckArr.count ;i++ )
+    {
+    BOOL Flag = [[LocationCheckArr objectAtIndex:i] boolValue];
+        if (Flag == true) {
+            locationType = [NSString stringWithFormat:@"%@%@",locationType,[LocationArrData objectAtIndex:i]];
+            [appDelegate.locationDict setObject:locationType forKey:@"location_type"];
+        } else {
+            
+        }
+    }
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -92,9 +122,21 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     BOOL selectFlag = [[LocationCheckArr objectAtIndex:indexPath.row] boolValue];
-    selectFlag = !selectFlag;
-    
+
+    for (int i = 0; i < LocationCheckArr.count; ++i){
+        [LocationCheckArr replaceObjectAtIndex:i withObject:[NSNumber numberWithBool:NO]];
+    }
+
+    if (selectFlag){
+        selectFlag = NO;
+    }else{
+        selectFlag = YES;
+    }
+
     [LocationCheckArr replaceObjectAtIndex:indexPath.row withObject:[NSNumber numberWithBool:selectFlag]];
+    
+    NSLog(@"%@", LocationCheckArr);
+    
     [tableView reloadData];
 }
 

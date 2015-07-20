@@ -7,9 +7,12 @@
 //
 
 #import "ADLAmenityViewController.h"
+#import "AppDelegate.h"
 
 @interface ADLAmenityViewController ()
-
+{
+    AppDelegate *appDelegate;
+}
 @end
 
 @implementation ADLAmenityViewController
@@ -17,13 +20,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    appDelegate = [AppDelegate sharedDelegate];
+    AmenitiesData = [NSArray arrayWithObjects:@"Living Room", @"Kitchen", @"Bedroom", @"Bed", @"Shower", @"Bathroom", @"Towels", @"Couch", @"Bed", @"Chair", @"Table", @"Private", @"Public", @"Pool", @"Spa", @"Wireless", @"Sex furniture", @"OTHER", nil];
+    
+    NSString *location_amenty = [appDelegate.locationDict valueForKey:@"location_amenty"];
+    NSLog(@"location type string : %@", location_amenty);
 
-    AmenitiesData = [NSArray arrayWithObjects:@"Living Room", @"Kitchen", @"Bedroom", @"Bed", @"Shower", @"Bathroom", @"Towels", @"Couch", @"Bed", @"Chair", @"Table", @"Private", @"Public", @"Pool", @"Spa", @"Wireless", @"Sex furniture", @"Other (fill in)", @"OTHER", nil];
  
     AmenitiesCheckArr = [[NSMutableArray alloc] init];
-    
+
     for (int i=0; i < [AmenitiesData count]; i++) {
-        [AmenitiesCheckArr addObject:[NSNumber numberWithBool:NO]];
+        
+        NSString* locationArrItem = (NSString*)[AmenitiesData objectAtIndex:i];
+        
+        if([appDelegate.updateString isEqualToString:@"update"]){
+            
+            if ([location_amenty isEqualToString:locationArrItem]){
+                [AmenitiesCheckArr addObject:[NSNumber numberWithBool:YES]];
+            }else{
+                [AmenitiesCheckArr addObject:[NSNumber numberWithBool:NO]];
+            }
+        }else{
+            [AmenitiesCheckArr addObject:[NSNumber numberWithBool:NO]];
+        }
     }
 }
 
@@ -39,7 +58,17 @@
 }
 
 - (IBAction)GoSave:(id)sender {
-    
+    NSString *locationType =@"";
+    for(int i = 0; i < AmenitiesCheckArr.count ;i++ )
+    {
+        BOOL Flag = [[AmenitiesCheckArr objectAtIndex:i] boolValue];
+        if (Flag == true) {
+            locationType = [NSString stringWithFormat:@"%@%@",locationType,[AmenitiesData objectAtIndex:i]];
+            [appDelegate.locationDict setObject:locationType forKey:@"location_amenty"];
+        } else {
+            
+        }
+    }
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -75,7 +104,7 @@
     }
 
     
-    UIButton*        cellCheckBtn = (UIButton*) [cell viewWithTag:4101];
+    UIButton *cellCheckBtn = (UIButton*) [cell viewWithTag:4101];
     
      BOOL selectFlag = [[AmenitiesCheckArr objectAtIndex:indexPath.row] boolValue];
     
@@ -91,9 +120,21 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     BOOL selectFlag = [[AmenitiesCheckArr objectAtIndex:indexPath.row] boolValue];
-    selectFlag = !selectFlag;
+    
+    for (int i = 0; i < AmenitiesCheckArr.count; ++i){
+        [AmenitiesCheckArr replaceObjectAtIndex:i withObject:[NSNumber numberWithBool:NO]];
+    }
+    
+    if (selectFlag){
+        selectFlag = NO;
+    }else{
+        selectFlag = YES;
+    }
+    
     [AmenitiesCheckArr replaceObjectAtIndex:indexPath.row withObject:[NSNumber numberWithBool:selectFlag]];
+    
     [tableView reloadData];
+
 
 }
 

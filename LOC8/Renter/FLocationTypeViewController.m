@@ -7,9 +7,13 @@
 //
 
 #import "FLocationTypeViewController.h"
+#import "AppDelegate.h"
+
 
 @interface FLocationTypeViewController ()
-
+{
+    AppDelegate *appDelegate;
+}
 @end
 
 @implementation FLocationTypeViewController
@@ -18,14 +22,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    LocationArrData = [NSArray arrayWithObjects:@"House", @"Apartment or Condo", @"Office", @"Outdoor", @"Garage", @"Commercial", @"Warehouse", @"Club", @"Private patio", @"Other (fill in)", nil];
+    LocationArrData = [NSArray arrayWithObjects:@"House", @"Apartment or Condo", @"Office", @"Outdoor", @"Garage", @"Commercial", @"Warehouse", @"Club", @"Private patio", @"Other", nil];
     
     CheckList = [[NSMutableArray alloc] init];
     
+
+    
     for (int i=0; i < [LocationArrData count]; i++) {
-        
         [CheckList addObject:[NSNumber numberWithBool:NO]];
     }
+
+
+
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

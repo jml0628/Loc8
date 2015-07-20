@@ -7,10 +7,13 @@
 //
 
 #import "ADLAddViewController.h"
+#import "AppDelegate.h"
 #import "Config.h"
 
 @interface ADLAddViewController ()
-
+{
+    AppDelegate *appDelegate;
+}
 @end
 
 @implementation ADLAddViewController
@@ -18,6 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    appDelegate = [AppDelegate sharedDelegate];
     // Do any additional setup after loading the view.
     
     // add tap gesture to help in dismissing keyboard
@@ -26,7 +30,37 @@
                                            action:@selector(tapScreen:)];// outside textfields
     
     [self.view addGestureRecognizer:tapGesture];
+    NSString *address = [appDelegate.locationDict valueForKey:@"address"];
+    NSString *apartment = [appDelegate.locationDict valueForKey:@"ATP"];
+    NSString *city = [appDelegate.locationDict valueForKey:@"city"];
+    NSString *state = [appDelegate.locationDict valueForKey:@"state"];
+    NSString *zipCode = [appDelegate.locationDict valueForKey:@"zip"];
+    if (address == nil || [address isKindOfClass:[NSNull class]]) {
+        
+    }else{
+        self.Address1Txt.text = [NSString stringWithFormat:@"%@",address];
+    }
+    if (apartment == nil || [apartment isKindOfClass:[NSNull class]]) {
+        
+    }else{
+        self.Address2Txt.text = [NSString stringWithFormat:@"%@",apartment];
+    }
     
+    if (city == nil || [city isKindOfClass:[NSNull class]]) {
+        
+    }else{
+        self.Address3Txt.text = [NSString stringWithFormat:@"%@",city];
+    }
+    if (state == nil || [state isKindOfClass:[NSNull class]]) {
+        
+    }else{
+        self.Address4Txt.text = [NSString stringWithFormat:@"%@",state];
+    }
+    if (zipCode == nil || [zipCode isKindOfClass:[NSNull class]]) {
+        
+    }else{
+        self.Address5Txt.text = [NSString stringWithFormat:@"%@",zipCode];
+    }
     
     [self.Address1Txt setReturnKeyType:UIReturnKeyNext];
     [self.Address2Txt setReturnKeyType:UIReturnKeyNext];
@@ -42,6 +76,15 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self     selector:@selector(keyboardDidShow:) name:UIKeyboardDidShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self      selector:@selector(keyboardDidHide:) name:UIKeyboardDidHideNotification object:nil];
+    
+    
+    if ([appDelegate.updateString isEqualToString:@"update"]) {
+        Address1Txt.text = [appDelegate.locationDict valueForKey:@"address"];
+        Address2Txt.text = [appDelegate.locationDict valueForKey:@"ATP"];
+        Address3Txt.text = [appDelegate.locationDict valueForKey:@"city"];
+        Address4Txt.text = [appDelegate.locationDict valueForKey:@"state"];
+        Address5Txt.text = [appDelegate.locationDict valueForKey:@"zip"];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,6 +98,11 @@
 }
 
 - (IBAction)GoSave:(id)sender {
+    [appDelegate.locationDict setObject:Address1Txt.text forKey:@"address"];
+    [appDelegate.locationDict setObject:Address2Txt.text forKey:@"ATP"];
+    [appDelegate.locationDict setObject:Address3Txt.text forKey:@"city"];
+    [appDelegate.locationDict setObject:Address4Txt.text forKey:@"state"];
+    [appDelegate.locationDict setObject:Address5Txt.text forKey:@"zip"];
     
     [self.navigationController popViewControllerAnimated:YES];
 }

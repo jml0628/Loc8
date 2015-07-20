@@ -10,7 +10,7 @@
 #import "SCLAlertView.h"
 #import "Config.h"
 #import "ActivityIndicator.h"
-//#import "AppSideSwitcherViewController.h"
+#import "AppSwitchViewController.h"
 #import "TabbarViewController.h"
 
 static const CGFloat ANIMATION_DURATION3 = 0.4;
@@ -66,6 +66,11 @@ CGSize keyboardSize3;
 
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    PersonLoginFlag = 1;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -80,7 +85,7 @@ CGSize keyboardSize3;
     [FirstnameTxt resignFirstResponder];
     [LastnameTxt resignFirstResponder];
     
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popToRootViewControllerAnimated:YES]; 
 }
 
 // Going App Side Switcher - view11
@@ -172,6 +177,7 @@ CGSize keyboardSize3;
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
     SCLAlertView *alert = [[SCLAlertView alloc] init];
     [alert showError:self title:Alert subTitle:ERFailInternet closeButtonTitle:OkButtonTitle duration:0.0f];
+    PersonLoginFlag = 0;
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
@@ -194,18 +200,18 @@ CGSize keyboardSize3;
     if(!signUpResult)
     {
         NSLog(@"Sigin UP SUCCESS");
+        PersonLoginFlag = 1;
         
-        TabbarViewController *ctrl = [self.storyboard instantiateViewControllerWithIdentifier:@"TabbarController"];
-        
-        [self presentViewController:ctrl animated:YES completion:nil];
-        
+        AppSwitchViewController *appSwitchVC = (AppSwitchViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"AppSwitchController"];
+        [self.navigationController pushViewController:appSwitchVC animated:TRUE];
+
     } else {
         
         SCLAlertView *alert = [[SCLAlertView alloc] init];
         
         [alert showNotice:self title:ALERT_SIGNUP_FAILED_TILE subTitle:ALERT_SIGNUP_FAILED_MSG closeButtonTitle:OkButtonTitle duration:0.0f];
         
-        return;
+        PersonLoginFlag = 0;
     }
 }
 

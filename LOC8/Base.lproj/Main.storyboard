@@ -336,7 +336,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="uuf-9L-7GM" kind="modal" id="Q6Q-PY-1F4"/>
+                                            <segue destination="uuf-9L-7GM" kind="push" id="QJo-89-jCA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="50m-Kl-edO" userLabel="explorer">
@@ -344,7 +344,7 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="btn_explore.png"/>
                                         <connections>
-                                            <action selector="GoBooking:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9XO-T7-2fv"/>
+                                            <segue destination="0bV-wp-HOp" kind="push" id="tPp-O2-tnh"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -367,7 +367,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="219.5" y="297.5"/>
+            <point key="canvasLocation" x="610.5" y="-533.5"/>
         </scene>
         <!--View3 - LogIn-->
         <scene sceneID="Tac-xp-hbf">
@@ -466,7 +466,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xZr-Zm-c5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-39.5" y="1112.5"/>
+            <point key="canvasLocation" x="326.5" y="291.5"/>
         </scene>
         <!--View4 - SignUp-->
         <scene sceneID="QHF-I2-1YL">
@@ -612,6 +612,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="jpf-3m-ebB"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="EmailTxt" destination="O00-Xh-tfh" id="Zdr-JS-C2m"/>
@@ -623,7 +624,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VOT-BZ-eAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="546.5" y="1112.5"/>
+            <point key="canvasLocation" x="912.5" y="291.5"/>
         </scene>
         <!--View5 - Forgot Password-->
         <scene sceneID="uiC-6L-nLL">
@@ -697,7 +698,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oU9-aN-nC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-481.5" y="1926.5"/>
+            <point key="canvasLocation" x="326.5" y="1112.5"/>
         </scene>
         <!--View11 - App Side Switcher-->
         <scene sceneID="2KT-t1-o2p">
@@ -728,7 +729,7 @@
                                             <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="GoBooking:" destination="0bV-wp-HOp" eventType="touchUpInside" id="eVw-0i-x3P"/>
+                                            <action selector="toogleNeedPlace:" destination="0bV-wp-HOp" eventType="touchUpInside" id="HBw-b6-jgf"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I NEED A PLACE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Onh-xZ-Q0K">
@@ -767,7 +768,7 @@
                                             <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="GoGotPlace:" destination="0bV-wp-HOp" eventType="touchUpInside" id="QPS-Ct-Sar"/>
+                                            <action selector="toogleGotPlace:" destination="0bV-wp-HOp" eventType="touchUpInside" id="RgU-EV-aHj"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'VE GOT A PLACE I WANT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dj5-SH-yL6">
@@ -801,8 +802,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="GoBack:" destination="0bV-wp-HOp" eventType="touchUpInside" id="dcR-RV-br4"/>
-                                    <action selector="GoBack:" destination="Hd6-ob-m1d" eventType="touchUpInside" id="yfx-xf-W1C"/>
+                                    <action selector="GoBack:" destination="0bV-wp-HOp" eventType="touchUpInside" id="w05-A3-bES"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -816,7 +816,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCW-df-QCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="330.5" y="1926.5"/>
+            <point key="canvasLocation" x="1759.5" y="-517.5"/>
         </scene>
         <!--Navigation View2-->
         <scene sceneID="tjY-TY-dx3">
@@ -835,7 +835,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Od8-Ci-kLf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-215.5" y="298.5"/>
+            <point key="canvasLocation" x="85.5" y="-533.5"/>
         </scene>
         <!--View20 - My Booking-->
         <scene sceneID="gU2-kj-NTV">
@@ -1004,6 +1004,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.16470588235294117" green="0.18823529411764706" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" id="hdb-7O-eEP">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="bm8-cF-IFq"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -1015,7 +1018,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LZg-rR-bLi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1640.5" y="1885.5"/>
+            <point key="canvasLocation" x="1649.5" y="1132.5"/>
         </scene>
         <!--View 27 Going - Message-->
         <scene sceneID="BsZ-QT-mrH">
@@ -1137,12 +1140,15 @@
                         </subviews>
                         <color key="backgroundColor" red="0.16470588235294117" green="0.18823529411764706" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" id="coQ-Ol-KPJ">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="c8C-FZ-Dqx"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qpi-mJ-I4I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2140.5" y="1885.5"/>
+            <point key="canvasLocation" x="2149.5" y="1132.5"/>
         </scene>
         <!--View10 - Message View-->
         <scene sceneID="rE2-TR-U2P">
@@ -1231,7 +1237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D6i-u6-YH9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2140.5" y="2657.5"/>
+            <point key="canvasLocation" x="3884.5" y="1911.5"/>
         </scene>
         <!--View14 - List View-->
         <scene sceneID="yPS-M2-hzk">
@@ -1417,6 +1423,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.16470588235294117" green="0.18823529411764706" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" id="BML-f9-xXf">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="bjU-L8-VCC"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -1433,7 +1443,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RPl-Eo-KSh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1122.5" y="1885.5"/>
+            <point key="canvasLocation" x="1131.5" y="1132.5"/>
         </scene>
         <!--Filter Nav View Controller-->
         <scene sceneID="whA-G0-AmX">
@@ -1450,7 +1460,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NIh-P0-MPw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1122.5" y="2699.5"/>
+            <point key="canvasLocation" x="442.5" y="1933.5"/>
         </scene>
         <!--View19 - Filter Amenities-->
         <scene sceneID="WNb-YJ-Ple">
@@ -4090,7 +4100,7 @@ AFTER BOOKING</string>
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="138"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tbl_cellRoom1.png" id="iM1-jQ-vzg" userLabel="room">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tbl_cellRoom1.png" id="iM1-jQ-vzg" userLabel="room" customClass="AsyncImageView">
                                                             <rect key="frame" x="0.0" y="1" width="91" height="91"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
@@ -4122,7 +4132,7 @@ AFTER BOOKING</string>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="oLg-1V-gtt" userLabel="photo">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="oLg-1V-gtt" userLabel="photo" customClass="AsyncImageView">
                                                             <rect key="frame" x="319" y="18" width="49" height="49"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
@@ -4160,7 +4170,7 @@ AFTER BOOKING</string>
                                                 <connections>
                                                     <outlet property="ItemBtn1" destination="O5i-7s-hlq" id="Oyy-Xs-mEJ"/>
                                                     <outlet property="ItemBtn2" destination="qz7-MU-z4j" id="HdS-Gz-6zk"/>
-                                                    <outlet property="ItemImg1" destination="iM1-jQ-vzg" id="HWH-OI-Ude"/>
+                                                    <outlet property="ItemImg1" destination="iM1-jQ-vzg" id="htX-Oe-1bH"/>
                                                     <outlet property="ItemImg2" destination="oLg-1V-gtt" id="U3P-gb-gkU"/>
                                                     <outlet property="ItemList1" destination="odA-iu-cXp" id="BvH-PV-C3h"/>
                                                     <outlet property="ItemList2" destination="kOg-C9-P67" id="pon-lv-p4k"/>
@@ -4180,6 +4190,9 @@ AFTER BOOKING</string>
                         </subviews>
                         <color key="backgroundColor" red="0.16470588235294117" green="0.18823529411764706" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" id="oWR-M0-y1f">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="cCC-KO-Dy6"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -4189,7 +4202,7 @@ AFTER BOOKING</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ilx-Ki-uQy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3352.5" y="1872.5"/>
+            <point key="canvasLocation" x="3346.5" y="1133.5"/>
         </scene>
         <!--View33 - Location Manage View Controller-->
         <scene sceneID="y9p-Bo-Y19">
@@ -4228,6 +4241,9 @@ AFTER BOOKING</string>
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="addLocationAction:" destination="0H2-WX-A8v" eventType="touchUpInside" id="3Nc-xA-T1A"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.22745098039215686" green="0.25882352941176467" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
@@ -4747,7 +4763,7 @@ AFTER BOOKING</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" tag="4101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dUd-Lq-vIb">
-                                                    <rect key="frame" x="345" y="16" width="17" height="17"/>
+                                                    <rect key="frame" x="345" y="12" width="25" height="25"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button" backgroundImage="btn_cellCheckB.png">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -4984,6 +5000,9 @@ AFTER BOOKING</string>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="availibiltyTable" destination="6Bz-VB-kLB" id="Ayu-ri-Aae"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Od-7K-gBw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -5062,6 +5081,9 @@ AFTER BOOKING</string>
                                                 <date key="date" timeIntervalSinceReferenceDate="456028416.65169197">
                                                     <!--2015-06-15 02:33:36 +0000-->
                                                 </date>
+                                                <connections>
+                                                    <action selector="endDate:" destination="Shl-2c-Bfx" eventType="valueChanged" id="piT-yJ-mUz"/>
+                                                </connections>
                                             </datePicker>
                                             <view contentMode="scaleToFill" id="XLE-1O-blX">
                                                 <rect key="frame" x="0.0" y="1017" width="375" height="351"/>
@@ -5086,7 +5108,7 @@ AFTER BOOKING</string>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
                                                                         <button opaque="NO" tag="391" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ln1-sq-pEN">
-                                                                            <rect key="frame" x="345" y="20" width="11" height="9"/>
+                                                                            <rect key="frame" x="342" y="12" width="25" height="25"/>
                                                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                                             <state key="normal" title="Button">
                                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -5145,6 +5167,9 @@ AFTER BOOKING</string>
                                                 <date key="date" timeIntervalSinceReferenceDate="456028410.28402102">
                                                     <!--2015-06-15 02:33:30 +0000-->
                                                 </date>
+                                                <connections>
+                                                    <action selector="startdate:" destination="Shl-2c-Bfx" eventType="valueChanged" id="TjM-JT-Kmo"/>
+                                                </connections>
                                             </datePicker>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT START DATE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YPe-z2-4af">
                                                 <rect key="frame" x="77" y="531" width="220" height="21"/>
@@ -5153,21 +5178,27 @@ AFTER BOOKING</string>
                                                 <color key="textColor" red="0.50588235290000005" green="0.51372549020000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" id="BTd-En-lPs">
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="30" id="BTd-En-lPs">
                                                 <rect key="frame" x="0.0" y="46" width="375" height="192"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <date key="date" timeIntervalSinceReferenceDate="456028387.518453">
                                                     <!--2015-06-15 02:33:07 +0000-->
                                                 </date>
+                                                <connections>
+                                                    <action selector="startTime:" destination="Shl-2c-Bfx" eventType="valueChanged" id="imn-fm-aU4"/>
+                                                </connections>
                                             </datePicker>
-                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" id="3B1-Aw-SLy">
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="30" id="3B1-Aw-SLy">
                                                 <rect key="frame" x="0.0" y="295" width="375" height="191"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <date key="date" timeIntervalSinceReferenceDate="456028398.82765102">
                                                     <!--2015-06-15 02:33:18 +0000-->
                                                 </date>
+                                                <connections>
+                                                    <action selector="endTime:" destination="Shl-2c-Bfx" eventType="valueChanged" id="u3N-fj-Ve3"/>
+                                                </connections>
                                             </datePicker>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -5180,12 +5211,16 @@ AFTER BOOKING</string>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1467"/>
                     <connections>
+                        <outlet property="endDatePicker" destination="wWZ-sF-cRe" id="21i-cu-XVr"/>
+                        <outlet property="endTimeDatePicker" destination="3B1-Aw-SLy" id="gBI-f5-m8v"/>
                         <outlet property="myRegScroller" destination="Sk8-SZ-JIl" id="FMC-Il-LXU"/>
+                        <outlet property="startDatePicker" destination="uPz-RQ-XaP" id="dND-F6-R7g"/>
+                        <outlet property="startTimeDatePicker" destination="BTd-En-lPs" id="cXA-mq-zBA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="spK-Ae-zds" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4846.5" y="4760.5"/>
+            <point key="canvasLocation" x="5033.5" y="4741.5"/>
         </scene>
         <!--View40 - location View Controller-->
         <scene sceneID="gfC-nm-Re2">
@@ -5250,7 +5285,7 @@ AFTER BOOKING</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" tag="4001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ukm-9W-6nK">
-                                                    <rect key="frame" x="345" y="17" width="17" height="17"/>
+                                                    <rect key="frame" x="345" y="12" width="25" height="25"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button" backgroundImage="btn_cellCheckB.png">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -5410,12 +5445,15 @@ AFTER BOOKING</string>
                         </subviews>
                         <color key="backgroundColor" red="0.16470588235294117" green="0.18823529411764706" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" id="yOs-j5-dET">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="CkP-nK-mWv"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0PW-Qp-VaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3858.5" y="1885.5"/>
+            <point key="canvasLocation" x="3884.5" y="1132.5"/>
         </scene>
         <!--View25 - Renters View Controller-->
         <scene sceneID="Eac-hF-B5v">
@@ -5613,6 +5651,9 @@ AFTER BOOKING</string>
                         </subviews>
                         <color key="backgroundColor" red="0.16470588235294117" green="0.18823529411764706" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" id="8fX-2e-Pgh">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="fBO-HQ-WTd"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -5623,12 +5664,13 @@ AFTER BOOKING</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZvT-pG-bsv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2810.5" y="1879.5"/>
+            <point key="canvasLocation" x="2836.5" y="1133.5"/>
         </scene>
         <!--Owner Tabbar View Controller-->
         <scene sceneID="xPh-WJ-WhJ">
             <objects>
                 <tabBarController storyboardIdentifier="OwnerTabbarController" id="Vcs-tW-feX" customClass="OwnerTabbarViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="jCT-na-euk"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="aKg-J3-3Oz">
@@ -5637,9 +5679,9 @@ AFTER BOOKING</string>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="sD0-nZ-os8" kind="relationship" relationship="viewControllers" id="nju-cO-CqS"/>
-                        <segue destination="aQc-Kd-KK3" kind="relationship" relationship="viewControllers" id="TdQ-0g-Xlw"/>
-                        <segue destination="qSP-lO-6c7" kind="relationship" relationship="viewControllers" id="EkK-YF-67L"/>
+                        <segue destination="XmB-tC-BRY" kind="relationship" relationship="viewControllers" id="CLj-Jk-Ttb"/>
+                        <segue destination="G57-dy-nIH" kind="relationship" relationship="viewControllers" id="bOf-1w-GTk"/>
+                        <segue destination="pil-xK-nIU" kind="relationship" relationship="viewControllers" id="1nL-rw-KaW"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kkn-OT-rVl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -5733,6 +5775,7 @@ AFTER BOOKING</string>
         <scene sceneID="uz7-cA-KBk">
             <objects>
                 <tabBarController storyboardIdentifier="TabbarController" id="nog-AP-lNd" customClass="TabbarViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="820-kw-1Fk"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="twv-jP-D49">
@@ -5741,77 +5784,14 @@ AFTER BOOKING</string>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="vDD-sl-dKG" kind="relationship" relationship="viewControllers" id="OCI-Om-ZBb"/>
-                        <segue destination="QBk-5p-Ex9" kind="relationship" relationship="viewControllers" id="XxE-uf-x0s"/>
-                        <segue destination="Rnc-Jv-Ti9" kind="relationship" relationship="viewControllers" id="rTj-b9-nDn"/>
+                        <segue destination="h1c-Fj-LwB" kind="relationship" relationship="viewControllers" id="h4p-QY-0mb"/>
+                        <segue destination="Xr4-nF-rNc" kind="relationship" relationship="viewControllers" id="243-FN-7VZ"/>
+                        <segue destination="9S6-vl-kGt" kind="relationship" relationship="viewControllers" id="aOd-v0-MEG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="82O-AI-Jhp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1640.5" y="291.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Fae-Ad-Hal">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="vDD-sl-dKG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="VDc-jo-8wi">
-                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
-                    </tabBarItem>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bhh-un-k7c">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="h1c-Fj-LwB" kind="relationship" relationship="rootViewController" id="6Mh-2J-QNu"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="atg-Xz-RsU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1122.5" y="1112.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="5Ri-no-eHp">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="QBk-5p-Ex9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="jpm-HL-mwL">
-                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
-                    </tabBarItem>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="evR-Y8-bVJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Xr4-nF-rNc" kind="relationship" relationship="rootViewController" id="svq-Nu-hsa"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Sq5-8v-Vfo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1640.5" y="1112.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Gx5-Zf-aZt">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Rnc-Jv-Ti9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="u5F-Q7-pNt">
-                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
-                    </tabBarItem>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7go-aw-bkI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="9S6-vl-kGt" kind="relationship" relationship="rootViewController" id="GXz-dq-VmS"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Op4-RT-5fq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2140.5" y="1112.5"/>
         </scene>
         <!--SettingsN Av View Controller-->
         <scene sceneID="Hdb-mB-aAk">
@@ -5850,69 +5830,6 @@ AFTER BOOKING</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EjX-vG-CUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-361.5" y="6776.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="S4D-ez-fq3">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="sD0-nZ-os8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="dZu-6l-SI5">
-                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
-                    </tabBarItem>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SiB-xn-ddY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="XmB-tC-BRY" kind="relationship" relationship="rootViewController" id="xyB-6h-CnL"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="myd-40-SOC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2810.5" y="1099.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="qzo-tX-nuI">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="aQc-Kd-KK3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="c9s-fY-MDc">
-                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
-                    </tabBarItem>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Dx-7h-EtQ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="G57-dy-nIH" kind="relationship" relationship="rootViewController" id="ZZZ-EZ-yrx"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hjU-Jl-xbB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3346.5" y="1099.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="uKA-EZ-Zw0">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="qSP-lO-6c7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="Mnh-AH-1RP">
-                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
-                    </tabBarItem>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="z79-Qr-bow">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="pil-xK-nIU" kind="relationship" relationship="rootViewController" id="brq-fe-Hve"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fla-Bd-9WU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3858.5" y="1099.5"/>
         </scene>
         <!--Nav Owner Add Loc View Controller-->
         <scene sceneID="Nvc-d6-CLo">

@@ -109,10 +109,7 @@
 }
 
 - (IBAction)PushingBlurView:(id)sender {
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self AddBlurView];
-    });
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void) searchListWithFiterItem: (int)tag {
@@ -333,7 +330,7 @@
     
     if (appSideViewFlag == 0) {
         
-        [self AddBlurView];
+//        [self AddBlurView];
         appSideViewFlag = 1;
     }
  

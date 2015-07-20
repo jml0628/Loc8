@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface ADLHourViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
     
-    NSArray *LocationArrData;
+    NSMutableArray *LocationArrData;
+    IBOutlet UITableView *availibiltyTable;
+    
 }
 
 

@@ -8,9 +8,11 @@
 
 #import "ADLDescViewController.h"
 #import "Config.h"
-
+#import "AppDelegate.h"
 @interface ADLDescViewController ()
-
+{
+    AppDelegate *appDelegate;
+}
 @end
 
 @implementation ADLDescViewController
@@ -19,6 +21,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    appDelegate = [AppDelegate sharedDelegate];
+    
+    NSString *string = [appDelegate.locationDict valueForKey:@"location_description"];
+    if (string == nil || [string isKindOfClass:[NSNull class]]) {
+        
+    }else{
+    self.DescriptTxt.text = [NSString stringWithFormat:@"%@",string];
+    }
     // Do any additional setup after loading the view.
     
     // add tap gesture to help in dismissing keyboard
@@ -37,6 +47,10 @@
     [[NSNotificationCenter defaultCenter] addObserver:self      selector:@selector(keyboardDidHide:) name:UIKeyboardDidHideNotification object:nil];
     
     DescriptTxt.autocorrectionType = UITextAutocorrectionTypeNo;
+    
+    if ([appDelegate.updateString isEqualToString:@"update"]) {
+        DescriptTxt.text = [appDelegate.locationDict valueForKey:@"location_description"];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,12 +59,12 @@
 }
 
 - (IBAction)GoBack:(id)sender {
-    
     [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)GoSave:(id)sender {
-    
+    [appDelegate.locationDict setObject:DescriptTxt.text forKey:@"location_description"];
+    NSLog(@"%@ %@",DescriptTxt.text,appDelegate.locationDict);
     [self.navigationController popViewControllerAnimated:YES];
 }
 

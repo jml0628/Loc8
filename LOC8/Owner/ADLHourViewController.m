@@ -7,24 +7,52 @@
 //
 
 #import "ADLHourViewController.h"
-
 #import "AddTimeViewController.h"
+#import "AppDelegate.h"
+#import "SCLAlertView.h"
 
 @interface ADLHourViewController ()
-
+{
+    AppDelegate *appDelegate;
+}
 @end
 
 @implementation ADLHourViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
-    LocationArrData = [NSArray arrayWithObjects:@"MAY 4-30 / TUE, WED, THU / 4:00Pm - 6:00 PM", @"MAY 5-30 / TUE, WED, SUN / 2:00Pm - 6:00 PM", nil];
+    // Do any additional setup after loading the view.
+    appDelegate = [AppDelegate sharedDelegate];
+    //LocationArrData = [NSArray arrayWithObjects:@"MAY 4-30 / TUE, WED, THU / 4:00Pm - 6:00 PM", @"MAY 5-30 / TUE, WED, SUN / 2:00Pm - 6:00 PM", nil];
+    LocationArrData = [[NSMutableArray alloc]init];
+    
+    if ([appDelegate.updateString isEqualToString:@"update"]) {
+        [LocationArrData addObject:[appDelegate.locationDict valueForKey:@"date"]];
+    }
+    
+}
+- (void) viewWillAppear:(BOOL)animated
+{
+    NSString *monthString = [NSString stringWithFormat:@"%@-%@",[appDelegate.locationDict valueForKey:@"start_date"],[appDelegate.locationDict valueForKey:@"end_date"]];
+    NSString *dayString = [appDelegate.locationDict valueForKey:@"available_days"];
+    
+    NSString *timeString = [NSString stringWithFormat:@"%@-%@",[appDelegate.locationDict valueForKey:@"start_time"],[appDelegate.locationDict valueForKey:@"end_time"]];
+    NSString *dateString = [NSString stringWithFormat:@"%@ / %@ / %@",monthString,dayString,timeString];
+    
+    
+    if (dayString == nil || [dayString isKindOfClass:[NSNull class]]) {
+    }else{
+        [LocationArrData removeAllObjects];
+        [LocationArrData addObject:dateString];
+        [availibiltyTable reloadData];
+    }
+    [super viewWillAppear:YES];
 }
 
+
 - (IBAction)GoSave:(id)sender {
-    
+    [appDelegate.locationDict setObject:[LocationArrData objectAtIndex:0] forKey:@"date"];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -87,7 +115,6 @@
         if (indexPath.row == 0) {
             
             AddTimeViewController *view = [self.storyboard instantiateViewControllerWithIdentifier:@"AddTimeController"];
-            
             [self.navigationController pushViewController:view animated:YES];
             
         }

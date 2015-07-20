@@ -64,7 +64,7 @@
 
 - (IBAction)PushingBlurView:(id)sender {
     
-    [self AddBlurView];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)PushUpcoming:(id)sender {

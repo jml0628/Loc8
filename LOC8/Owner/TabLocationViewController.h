@@ -23,9 +23,10 @@
     NSMutableArray*     listArray;
     
     int         curConnectionState;
-    
     int     TypeKind;
     int     listCount;
+    
+    NSMutableArray *dataArray;
 }
 
 @property (nonatomic, strong) IBOutlet UIButton *AddLocationBtn;

@@ -7,9 +7,11 @@
 //
 
 #import "ADLAttViewController.h"
-
+#import "AppDelegate.h"
 @interface ADLAttViewController ()
-
+{
+    AppDelegate *appDelegate;
+}
 @end
 
 @implementation ADLAttViewController
@@ -17,8 +19,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    appDelegate = [AppDelegate sharedDelegate];
     AmenitiesData = [NSArray arrayWithObjects:@"HOST ABSENT", @"HOST PRESENT", @"UNKNOWN", nil];
+    
+    if ([appDelegate.updateString isEqualToString:@"update"]) {
+        NSString *string = [appDelegate.locationDict valueForKey:@"location_ateendency"];
+        if ([string isEqualToString:@"HOST ABSENT"]) {
+            attendence = [AmenitiesData objectAtIndex:0];
+            GenderType = (int)0;
+        }
+        if ([string isEqualToString:@"HOST PRESENT"]) {
+            attendence = [AmenitiesData objectAtIndex:0];
+            GenderType = (int)1;
+        }
+        if ([string isEqualToString:@"UNKNOWN"]) {
+            attendence = [AmenitiesData objectAtIndex:0];
+            GenderType = (int)2;
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,12 +46,11 @@
 
 // Going Browse list -  Filter - View16
 - (IBAction)GoBack:(id)sender {
-    
     [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)GoSave:(id)sender {
-    
+     [appDelegate.locationDict setObject:attendence forKey:@"location_ateendency"];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -43,8 +60,6 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
-
     return [AmenitiesData count];;
 
 }
@@ -78,7 +93,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    attendence = [AmenitiesData objectAtIndex:indexPath.row];
     GenderType = (int) indexPath.row;
     
     [tableView reloadData];

@@ -17,4 +17,7 @@
 @property (nonatomic, strong) IBOutlet UIImageView *blurImage1;
 @property (weak, nonatomic) IBOutlet    UIView  *matchView;
 
+- (IBAction)toogleNeedPlace:(id)sender;
+- (IBAction)toogleGotPlace:(id)sender;
+
 @end

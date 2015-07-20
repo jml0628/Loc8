@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AsyncImageView.h"
 
 @interface RBMyBookingTableViewCell : UITableViewCell
 
@@ -15,7 +16,7 @@
 @property (strong, nonatomic) IBOutlet UILabel*     ItemList3;
 @property (strong, nonatomic) IBOutlet UILabel*     ItemList4;
 
-@property (strong, nonatomic) IBOutlet UIImageView  * ItemImg1;
+@property (strong, nonatomic) IBOutlet AsyncImageView  * ItemImg1;
 @property (strong, nonatomic) IBOutlet UIImageView  * ItemImg2;
 
 @property (strong, nonatomic) IBOutlet UIButton     *ItemBtn1;
